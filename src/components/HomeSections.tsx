@@ -230,7 +230,7 @@ export default function HomeSections() {
             <section id="viksit-bharat" className="py-32 relative overflow-hidden bg-white flex items-center justify-center min-h-[60vh] w-full">
                 {/* Flag SVG Background */}
                 <div
-                    className="absolute inset-0 z-0 opacity-15 w-full bg-center bg-no-repeat bg-[length:100%_100%] sm:bg-cover"
+                    className="absolute inset-0 z-0 opacity-65 w-full bg-center bg-no-repeat bg-[length:auto_100%] md:bg-[length:100%_100%] lg:bg-[length:100%_auto]"
                     style={{ backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/50 to-white/95 z-0" />
