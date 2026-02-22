@@ -128,7 +128,7 @@ export default function HomeSections() {
                     style={{ y: yBg, backgroundImage: "url('/images/biker bg.webp')" }}
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 />
-                <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-black/40 to-background/90" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-black/40 to-background/20" />
 
                 <div className="container relative z-20 px-4 text-center">
                     <motion.h1
