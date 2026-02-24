@@ -76,18 +76,25 @@ export default function HomeSections() {
         const form = e.currentTarget;
         const formData = new FormData(form);
 
+        // 🔐 ADD SECRET TOKEN (REQUIRED)
+        formData.append("site_key", "freshpod_secure_2026");
+
         if (interestedIn) formData.append("Interested In", interestedIn);
         if (interestedIn === "Distribution" && selectedState) {
             formData.append("State selected", selectedState);
         }
 
         try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbwERK4S5g9GfLLv86B2kgv6Q_CNyJ9u_fSmHNSCSU-LfiKeYUIOoshM6n808oLegiGw9w/exec", {
-                method: "POST",
-                body: formData,
-            });
+            const response = await fetch(
+                "https://script.google.com/macros/s/AKfycbwERK4S5g9GfLLv86B2kgv6Q_CNyJ9u_fSmHNSCSU-LfiKeYUIOoshM6n808oLegiGw9w/exec",
+                {
+                    method: "POST",
+                    body: formData,
+                }
+            );
 
             const result = await response.json();
+
             if (result.status === "success") {
                 setSubmitStatus("success");
                 setLastSubmitTime(Date.now());
@@ -111,6 +118,9 @@ export default function HomeSections() {
             } else if (result.status === "spam") {
                 setSubmitStatus("error");
                 setFeedbackMessage("Spam detected.");
+            } else if (result.status === "forbidden") {
+                setSubmitStatus("error");
+                setFeedbackMessage("Unauthorized request.");
             } else {
                 setSubmitStatus("error");
                 setFeedbackMessage("Something went wrong. Please try again.");
