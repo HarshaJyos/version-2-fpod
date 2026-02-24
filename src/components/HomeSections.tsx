@@ -564,6 +564,9 @@ export default function HomeSections() {
 
                                     {interestedIn === "Distribution" && (
                                         <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }}>
+                                            <p className="text-primary text-sm font-medium mt-4 bg-primary/10 p-3 rounded-lg flex items-start gap-2 border border-primary/20 leading-snug">
+                                                <span className="mt-0.5">ℹ</span> Please note that distribution is already available in Andhra Pradesh, Maharashtra, Kerala, Karnataka, and Tamil Nadu.
+                                            </p>
                                             <label className="block text-sm font-semibold text-foreground mb-2 mt-4">State / Region</label>
                                             <Select onValueChange={setSelectedState} value={selectedState}>
                                                 <SelectTrigger className="w-full py-6 text-base bg-background/50 border-border focus:ring-primary shadow-sm rounded-xl">

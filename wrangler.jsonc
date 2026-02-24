@@ -15,5 +15,8 @@
             "enabled": false,
             "invocation_logs": true
         }
+    },
+    "vars": {
+        "NEXT_PUBLIC_CONTACT_SECRET": "freshpod_secure_2026"
     }
 }
