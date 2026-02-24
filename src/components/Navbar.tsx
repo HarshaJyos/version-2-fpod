@@ -50,7 +50,7 @@ export default function Navbar() {
                         <div className="relative w-28 h-9 md:w-32 md:h-11 transition-transform hover:scale-105 duration-300">
                             <Image
                                 src="/images/GOGO.png"
-                                alt="Freshpod Logo"
+                                alt="Freshpod India Best Helmet Sanitizing Machine Logo"
                                 fill
                                 className="object-contain"
                                 priority

@@ -16,7 +16,7 @@ export default function Footer() {
                         <div className="relative w-40 h-16 bg-white rounded-xl p-2">
                             <Image
                                 src="/images/GOGO.png"
-                                alt="FreshPod Logo"
+                                alt="FreshPod Premium Helmet Care India Logo"
                                 fill
                                 className="object-contain"
                             />
