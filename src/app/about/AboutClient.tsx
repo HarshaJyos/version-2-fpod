@@ -39,78 +39,71 @@ export default function AboutClient() {
                     style={{ backgroundImage: "url('/images/biker bg.webp')" }}
                 />
                 <div className="absolute inset-0 z-0 bg-gradient-to-b from-foreground/80 via-foreground/60 to-foreground/90" />
-                <div className="container relative z-10 px-4 text-center py-24">
+                <div className="container relative z-10 px-4 text-center py-16 md:py-24">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.9, ease: "easeOut" }}
                     >
-                        <span className="inline-block bg-primary/20 text-primary font-semibold text-sm px-4 py-1.5 rounded-full mb-6 border border-primary/30">
+                        <span className="inline-block bg-primary/20 text-primary font-semibold text-sm px-4 py-1.5 rounded-full mb-5 border border-primary/30">
                             Our Story
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-bold font-outfit text-white leading-tight max-w-4xl mx-auto mb-6">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-outfit text-white leading-tight max-w-4xl mx-auto mb-4 md:mb-6">
                             About FreshPod
                         </h1>
-                        <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-base md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed px-2">
                             A mission born from a simple truth — every rider deserves a clean, safe helmet.
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* STORY + CAROUSEL */}
+            {/* STORY + CAROUSEL — matches homepage About section */}
             <section className="py-24 bg-white">
                 <div className="container px-4">
-                    <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-                        <motion.div
-                            initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
-                            className="space-y-6 md:pt-4"
-                        >
-                            <h2 className="text-3xl md:text-4xl font-bold font-outfit text-foreground">
-                                Welcome to{" "}
-                                <span className="text-primary">Freshpod</span>
-                            </h2>
-                            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
-                                At Freshpod, we are on a mission to redefine hygiene and safety for bikers by revolutionizing the way helmets are cleaned and maintained. Our journey began with a simple yet powerful idea — to provide a quick, effective, and accessible solution for helmet cleanliness.
-                            </p>
-                            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
-                                Our flagship product, the Freshpod Helmet Disinfectant Machine, embodies this mission. It is a revolutionary innovation that uses UV-C and ozone technology to ensure your helmet stays fresh, sanitized, and safe — in just 3 to 5 minutes, without a single drop of water or chemical.
-                            </p>
-                            <p className="text-muted-foreground text-lg leading-relaxed text-justify">
-                                Our commitment is not only to individual bikers but also to businesses that depend on helmets daily. Freshpod is compact, cost-effective, and versatile — perfect for rideshare companies, delivery hubs, and bike rental services across India.
-                            </p>
-                            <div className="pt-2">
-                                <Link href="/#contact">
-                                    <Button size="lg" className="rounded-full px-8 shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all">
-                                        Get In Touch
-                                    </Button>
-                                </Link>
-                            </div>
-                        </motion.div>
 
-                        {/* FM_x Infinite Carousel — 4:5 ratio */}
+                    <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.92 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="w-full max-w-sm mx-auto md:mx-0"
+                            initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
+                            className="space-y-6 text-lg text-muted-foreground leading-relaxed md:pt-4"
                         >
-                            <InfiniteCarousel images={fmImages} interval={3200} />
+                            <h3 className="text-2xl font-bold font-outfit text-foreground">Welcome to <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-primary to-green-400">Freshpod!</span></h3>
+                            <p>
+                                At Freshpod, we are on a mission to redefine hygiene and safety for bikers by revolutionizing the way helmets are cleaned and maintained. Our journey began with a simple yet powerful idea—to provide a quick, effective, and accessible solution for helmet cleanliness.
+                            </p>
+                            <p>
+                                Our flagship product, the Freshpod Helmet Disinfectant Machine, embodies this mission. It is a revolutionary innovation designed to ensure your helmet stays fresh, sanitized, and safe.
+                            </p>
+                            <p>
+                                Our commitment is not only to individual bikers but also to businesses that depend on helmets daily. Freshpod is compact, cost-effective, and versatile — perfect for rideshare companies, delivery hubs, and bike rental services.
+                            </p>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
+                            className="w-full mx-auto max-w-xs md:max-w-none"
+                        >
+                            <InfiniteCarousel
+                                images={fmImages}
+                                interval={3200}
+                            />
                         </motion.div>
                     </div>
                 </div>
             </section>
 
+
             {/* MISSION & VISION */}
-            <section className="py-24 bg-background">
+            <section className="py-16 md:py-24 bg-background">
                 <div className="container px-4">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
-                        className="text-center mb-16"
+                        className="text-center mb-10 md:mb-16"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold font-outfit text-foreground inline-block relative after:content-[''] after:block after:w-24 after:h-1.5 after:bg-primary after:mx-auto after:mt-4 after:rounded-full">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-outfit text-foreground inline-block relative after:content-[''] after:block after:w-24 after:h-1.5 after:bg-primary after:mx-auto after:mt-4 after:rounded-full">
                             Mission & Vision
                         </h2>
                     </motion.div>
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
                         {[
                             {
                                 icon: Target,
@@ -125,12 +118,12 @@ export default function AboutClient() {
                         ].map((item, i) => (
                             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: i * 0.15 }}>
                                 <Card className="h-full border-border/50 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 group rounded-2xl">
-                                    <CardContent className="p-8 space-y-4">
-                                        <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                            <item.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+                                    <CardContent className="p-6 md:p-8 space-y-4">
+                                        <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                            <item.icon className="w-6 h-6 md:w-7 md:h-7 text-primary group-hover:text-primary-foreground transition-colors" />
                                         </div>
-                                        <h3 className="text-2xl font-bold font-outfit text-foreground">{item.title}</h3>
-                                        <p className="text-muted-foreground text-lg leading-relaxed text-justify">{item.body}</p>
+                                        <h3 className="text-xl md:text-2xl font-bold font-outfit text-foreground">{item.title}</h3>
+                                        <p className="text-muted-foreground text-base md:text-lg leading-relaxed">{item.body}</p>
                                     </CardContent>
                                 </Card>
                             </motion.div>
@@ -140,26 +133,26 @@ export default function AboutClient() {
             </section>
 
             {/* OUR VALUES */}
-            <section className="py-24 bg-white">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container px-4">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
-                        className="text-center mb-16"
+                        className="text-center mb-10 md:mb-16"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold font-outfit text-foreground inline-block relative after:content-[''] after:block after:w-24 after:h-1.5 after:bg-primary after:mx-auto after:mt-4 after:rounded-full">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-outfit text-foreground inline-block relative after:content-[''] after:block after:w-24 after:h-1.5 after:bg-primary after:mx-auto after:mt-4 after:rounded-full">
                             Our Values
                         </h2>
                     </motion.div>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-6xl mx-auto">
                         {values.map((v, i) => (
                             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: i * 0.1 }}>
                                 <Card className="h-full border-border/50 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 group rounded-2xl text-center">
-                                    <CardContent className="p-8 flex flex-col items-center space-y-4">
-                                        <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                            <v.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
+                                    <CardContent className="p-6 md:p-8 flex flex-col items-center space-y-3 md:space-y-4">
+                                        <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                            <v.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
                                         </div>
-                                        <h3 className="text-xl font-bold font-outfit text-foreground">{v.title}</h3>
-                                        <p className="text-muted-foreground leading-relaxed text-sm text-justify">{v.desc}</p>
+                                        <h3 className="text-lg md:text-xl font-bold font-outfit text-foreground">{v.title}</h3>
+                                        <p className="text-muted-foreground leading-relaxed text-sm text-center">{v.desc}</p>
                                     </CardContent>
                                 </Card>
                             </motion.div>
@@ -169,7 +162,7 @@ export default function AboutClient() {
             </section>
 
             {/* VIKSIT BHARAT */}
-            <section className="py-24 relative overflow-hidden bg-white flex items-center justify-center min-h-[50vh]">
+            <section className="py-16 md:py-24 relative overflow-hidden bg-white flex items-center justify-center min-h-[40vh]">
                 <div
                     className="absolute inset-0 z-0 opacity-50 w-full bg-center bg-no-repeat bg-[length:auto_100%] md:bg-[length:100%_100%]"
                     style={{ backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg')" }}
@@ -178,17 +171,17 @@ export default function AboutClient() {
                 <div className="container px-4 relative z-10">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
-                        className="max-w-4xl mx-auto text-center"
+                        className="max-w-3xl mx-auto text-center"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold font-outfit text-foreground mb-10 drop-shadow-sm">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-outfit text-foreground mb-6 md:mb-10 drop-shadow-sm">
                             🇮🇳 Viksit Bharat
                         </h2>
-                        <Card className="bg-white/70 backdrop-blur-xl border-white/50 shadow-2xl p-10 md:p-14 hover:shadow-primary/20 transition-all duration-500 rounded-3xl">
-                            <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-8 font-medium text-justify">
+                        <Card className="bg-white/70 backdrop-blur-xl border-white/50 shadow-2xl p-6 sm:p-8 md:p-12 hover:shadow-primary/20 transition-all duration-500 rounded-3xl">
+                            <p className="text-base sm:text-xl md:text-2xl text-foreground leading-relaxed mb-6 md:mb-8 font-medium text-center">
                                 Freshpod is not just a product; it's a symbol of innovation and self-reliance. Designed, developed, and manufactured entirely in India, we take pride in supporting the <strong>Viksit Bharat</strong> and <strong>Atmanirbhar Bharat</strong> initiatives.
                             </p>
-                            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-8 rounded-full" />
-                            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-justify">
+                            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6 md:mb-8 rounded-full" />
+                            <p className="text-sm sm:text-base md:text-xl text-muted-foreground leading-relaxed text-center">
                                 By choosing Freshpod, you are ensuring hygiene and safety while contributing to India's growing manufacturing ecosystem. Together, we build a cleaner, safer, and self-sufficient future.
                             </p>
                         </Card>
