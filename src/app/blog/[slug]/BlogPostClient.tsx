@@ -91,7 +91,7 @@ function CtaBlock({ data }: { data: any }) {
             {data.heading && <h3 className="text-xl md:text-2xl font-bold font-outfit text-foreground">{data.heading}</h3>}
             <p className="text-muted-foreground text-base md:text-lg">{data.text}</p>
             <Link href={data.href}>
-                <Button size="lg" className="rounded-full px-8 shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all mt-1">
+                <Button size="lg" className="rounded-full px-8 py-3 h-auto whitespace-normal max-w-full shadow-lg shadow-primary/20 hover:-translate-y-1 transition-all mt-1 leading-snug">
                     {data.label}
                 </Button>
             </Link>

@@ -27,7 +27,7 @@ import InfiniteCarousel from "@/components/InfiniteCarousel";
 import {
     Settings, Leaf, TrendingUp, Users, ShieldCheck, Clock,
     Pipette, Zap, Coins, HeartPulse, QrCode, DoorOpen, HardHat,
-    Lock, Biohazard, Unlock, Smile, Send, CheckCircle2, Wind
+    Lock, Biohazard, Unlock, Smile, Send, CheckCircle2, Wind, Star
 } from "lucide-react";
 import { useRef, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
@@ -82,13 +82,13 @@ export default function HomeSections() {
         }
 
         try {
-            const response = await fetch("https://formspree.io/f/xgolnevo", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwERK4S5g9GfLLv86B2kgv6Q_CNyJ9u_fSmHNSCSU-LfiKeYUIOoshM6n808oLegiGw9w/exec", {
                 method: "POST",
                 body: formData,
-                headers: { Accept: "application/json" },
             });
 
-            if (response.ok) {
+            const result = await response.json();
+            if (result.status === "success") {
                 setSubmitStatus("success");
                 setLastSubmitTime(Date.now());
 
@@ -105,9 +105,15 @@ export default function HomeSections() {
                 form.reset();
                 setInterestedIn("");
                 setSelectedState("");
+            } else if (result.status === "rate_limited") {
+                setSubmitStatus("error");
+                setFeedbackMessage("Please wait before submitting again.");
+            } else if (result.status === "spam") {
+                setSubmitStatus("error");
+                setFeedbackMessage("Spam detected.");
             } else {
                 setSubmitStatus("error");
-                setFeedbackMessage("Oops! There was a problem submitting your form. Please try again.");
+                setFeedbackMessage("Something went wrong. Please try again.");
             }
         } catch (error) {
             setSubmitStatus("error");
@@ -378,6 +384,92 @@ export default function HomeSections() {
                             />
                         </motion.div>
                     </div>
+                </div>
+            </section>
+
+            {/* TESTIMONIALS */}
+            <section className="py-16 md:py-24 bg-primary/5">
+                <div className="container px-4 max-w-6xl mx-auto">
+                    <motion.div
+                        initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
+                        className="text-center mb-16"
+                    >
+                        <h2 className="text-3xl md:text-5xl font-bold font-outfit text-foreground inline-block relative after:content-[''] after:block after:w-24 after:h-1.5 after:bg-primary after:mx-auto after:mt-4 after:rounded-full">
+                            What Our Riders Say
+                        </h2>
+                        <p className="mt-6 text-muted-foreground text-lg max-w-2xl mx-auto">
+                            Don't just take our word for it — hear from the people who ride with Freshpod every day.
+                        </p>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
+                        className="px-4 md:px-12"
+                    >
+                        <Carousel
+                            opts={{
+                                align: "start",
+                                loop: true,
+                            }}
+                            plugins={[
+                                Autoplay({
+                                    delay: 4000,
+                                }),
+                            ]}
+                            className="w-full"
+                        >
+                            <CarouselContent className="-ml-4 md:-ml-6">
+                                {[
+                                    {
+                                        name: "Krishna Rokkm",
+                                        note: "Helmet smells incredibly good after cleaning in Freshpod. It's a game changer for daily riders like me.",
+                                    },
+                                    {
+                                        name: "Syam Yadla",
+                                        note: "Having a nice refreshment after cleaning with Freshpod. The interior feels brand new and completely sweat-free.",
+                                    },
+                                    {
+                                        name: "Hanish Jyosyabhatla",
+                                        note: "The UV and ozone disinfection completely eliminates all the bad odor. I can finally ride comfortably without worrying about hygiene.",
+                                    },
+                                    {
+                                        name: "Pavan Duggirala",
+                                        note: "Absolutely brilliant service. My expensive helmet was getting ruined by sweat, but Freshpod restored it perfectly in just a few minutes.",
+                                    },
+                                    {
+                                        name: "Rahul M",
+                                        note: "Very fast and effective. The amount of dust and smell it removes is surprising. Highly recommended for everyone.",
+                                    }
+                                ].map((testimonial, index) => (
+                                    <CarouselItem key={index} className="pl-4 md:pl-6 md:basis-1/2 lg:basis-1/3">
+                                        <Card className="h-full bg-white border border-border/50 shadow-sm hover:shadow-md hover:border-primary/30 transition-all rounded-2xl flex flex-col">
+                                            <CardContent className="p-6 md:p-8 flex flex-col flex-grow">
+                                                <div className="flex text-amber-500 mb-4">
+                                                    {[...Array(5)].map((_, i) => (
+                                                        <Star key={i} className="w-5 h-5 fill-current" />
+                                                    ))}
+                                                </div>
+                                                <p className="text-foreground text-lg italic leading-relaxed flex-grow">
+                                                    "{testimonial.note}"
+                                                </p>
+                                                <div className="mt-6 pt-6 border-t border-border/50 flex items-center gap-4">
+                                                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary font-outfit flex-shrink-0">
+                                                        {testimonial.name.charAt(0)}
+                                                    </div>
+                                                    <div>
+                                                        <h4 className="font-bold font-outfit text-foreground truncate">{testimonial.name}</h4>
+                                                        <span className="text-xs text-muted-foreground">Verified Rider</span>
+                                                    </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="hidden md:flex -left-12 bg-white hover:bg-primary hover:text-white border-border shadow-sm" />
+                            <CarouselNext className="hidden md:flex -right-12 bg-white hover:bg-primary hover:text-white border-border shadow-sm" />
+                        </Carousel>
+                    </motion.div>
                 </div>
             </section>
 

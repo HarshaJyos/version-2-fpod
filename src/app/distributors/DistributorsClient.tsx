@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, MapPin, Package, CheckCircle2, Globe, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Package, CheckCircle2, Globe, MessageCircle, Mail } from "lucide-react";
 import distributorsData from "@/data/distributors.json";
 import internationalData from "@/data/international.json";
 import dynamic from "next/dynamic";
@@ -162,7 +162,7 @@ export default function DistributorsClient() {
                                 </div>
 
                                 {/* Distributor cards — 1 col mobile, 2 col sm+ */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div className={`grid gap-4 ${stateData.distributors.length === 1 ? "grid-cols-1 max-w-xl mx-auto" : "grid-cols-1 sm:grid-cols-2"}`}>
                                     {stateData.distributors.map((dist: any, di: number) => (
                                         <Card key={di}
                                             className={`bg-gradient-to-br ${stateColors[stateData.state] || "from-primary/5 to-primary/2 border-primary/20"} border hover:shadow-xl transition-all duration-300 hover:-translate-y-1 rounded-2xl`}>
@@ -179,15 +179,26 @@ export default function DistributorsClient() {
                                                         <Package className="w-4 h-4 text-primary" />
                                                     </div>
                                                 </div>
-                                                <div className="space-y-1.5">
-                                                    <a href={`tel:${dist.phone.replace(/\s/g, "")}`}
-                                                        className="flex items-center gap-2 text-primary font-semibold hover:underline group transition-all">
+                                                <div className="space-y-2.5">
+                                                    <a href={`tel:${dist.phone.split('/')[0].replace(/[^0-9+]/g, "")}`}
+                                                        className="flex items-center gap-2 text-primary hover:underline group transition-all">
                                                         <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors flex-shrink-0">
                                                             <Phone className="w-3.5 h-3.5 text-primary group-hover:text-primary-foreground transition-colors" />
                                                         </div>
-                                                        <span className="text-sm">{dist.phone}</span>
+                                                        <span className="text-sm font-semibold">{dist.phone}</span>
                                                     </a>
-                                                    <p className="text-muted-foreground text-sm pl-10">Coverage: {dist.coverage}</p>
+                                                    {dist.email && (
+                                                        <a href={`mailto:${dist.email}`}
+                                                            className="flex items-center gap-2 text-primary hover:underline group transition-all">
+                                                            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors flex-shrink-0">
+                                                                <Mail className="w-3.5 h-3.5 text-primary group-hover:text-primary-foreground transition-colors" />
+                                                            </div>
+                                                            <span className="text-sm font-semibold truncate max-w-[200px] sm:max-w-[250px]">{dist.email}</span>
+                                                        </a>
+                                                    )}
+                                                    <div className="pl-10">
+                                                        <p className="text-muted-foreground text-sm leading-snug"><span className="font-semibold text-foreground/80">Coverage:</span> {dist.coverage}</p>
+                                                    </div>
                                                 </div>
                                             </CardContent>
                                         </Card>
@@ -277,8 +288,8 @@ export default function DistributorsClient() {
                             viewport={{ once: true }} transition={{ duration: 0.8 }}
                             className="grid grid-cols-2 gap-4 md:gap-5">
                             {[
-                                { num: "6+", label: "Active States" },
-                                { num: "12+", label: "Distributors" },
+                                { num: `${distributorsData.length}+`, label: "Active States" },
+                                { num: `${distributorsData.reduce((acc: number, state: any) => acc + state.distributors.length, 0)}+`, label: "Distributors" },
                                 { num: "100%", label: "Made in India" },
                                 { num: "24/7", label: "Partner Support" },
                             ].map((stat, i) => (

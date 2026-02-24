@@ -1,37 +1,27 @@
 [
     {
-        "state": "Kerala",
-        "region": "South India",
+        "state": "Maharashtra",
+        "region": "West India",
         "distributors": [
             {
-                "name": "Rahul Menon",
-                "phone": "+91 9847100001",
-                "city": "Kochi",
-                "coverage": "Ernakulam, Thrissur, Palakkad"
-            },
-            {
-                "name": "Suresh Pillai",
-                "phone": "+91 9847200002",
-                "city": "Thiruvananthapuram",
-                "coverage": "Thiruvananthapuram, Kollam, Pathanamthitta"
+                "name": "Rishiv Distributors",
+                "phone": "+91 9930301124",
+                "city": "Mumbai",
+                "coverage": "Mumbai, Thane, Pune, Nagpur, Nashik, Kolapur, Solapur, Amravati, Aurangabad",
+                "email": "freshpod.maharashtra@gmail.com"
             }
         ]
     },
     {
-        "state": "Karnataka",
+        "state": "Kerala",
         "region": "South India",
         "distributors": [
             {
-                "name": "Manjunath Reddy",
-                "phone": "+91 9900100003",
-                "city": "Bengaluru",
-                "coverage": "Bengaluru Urban, Bengaluru Rural, Ramanagara"
-            },
-            {
-                "name": "Prakash Gowda",
-                "phone": "+91 9900200004",
-                "city": "Mysuru",
-                "coverage": "Mysuru, Mandya, Chamarajanagar"
+                "name": "Shone",
+                "phone": "+91 8075 863686",
+                "city": "Ernakulam North",
+                "coverage": "Ernakulam, Alapuzya, Trivandrum, Kannur, Kasargod, Calicut, Malappuram, Trissur, Kottayam",
+                "email": "sales@futuristaindia.com"
             }
         ]
     },
@@ -40,16 +30,24 @@
         "region": "South India",
         "distributors": [
             {
-                "name": "Karthik Rajan",
-                "phone": "+91 9444100005",
-                "city": "Chennai",
-                "coverage": "Chennai, Kancheepuram, Tiruvallur"
-            },
-            {
-                "name": "Vijay Anand",
-                "phone": "+91 9444200006",
+                "name": "Sunand",
+                "phone": "+91 8525011818",
                 "city": "Coimbatore",
-                "coverage": "Coimbatore, Tiruppur, Erode"
+                "coverage": "Chennai, Coimbatore, Madurai, Trichy, Salem",
+                "email": "Freshpodtn@gmail.com"
+            }
+        ]
+    },
+    {
+        "state": "Karnataka",
+        "region": "South India",
+        "distributors": [
+            {
+                "name": "Sreenivas",
+                "phone": "+91 96661 62699",
+                "city": "Bengaluru",
+                "coverage": "Bengaluru, Mysuru, Mangaluru, Belgaum, Hubli, Udupi, Gulbarga, Shimoga, Bellary, Bijapur",
+                "email": "freshpod_ka@manamvanam.com"
             }
         ]
     },
@@ -58,52 +56,37 @@
         "region": "South India",
         "distributors": [
             {
-                "name": "Srinivas Rao",
-                "phone": "+91 9963100007",
-                "city": "Vijayawada",
-                "coverage": "Krishna, Guntur, NTR District"
-            },
-            {
-                "name": "Venkat Naidu",
-                "phone": "+91 9963200008",
+                "name": "Sreenivas",
+                "phone": "+91 96661 62699",
                 "city": "Visakhapatnam",
-                "coverage": "Visakhapatnam, Vizianagaram, Srikakulam"
+                "coverage": "Visakhapatnam, Vijayawada, Guntur, Nellore, Tirupati, Rajahmundry, Kakinada",
+                "email": "freshpod_ap@manamvanam.com"
             }
         ]
     },
     {
-        "state": "Telangana",
-        "region": "South India",
+        "state": "Province No. 5",
+        "region": "Nepal",
         "distributors": [
             {
-                "name": "Ramesh Kumar",
-                "phone": "+91 9848100009",
-                "city": "Hyderabad",
-                "coverage": "Hyderabad, Rangareddy, Medchal-Malkajgiri"
-            },
-            {
-                "name": "Ashok Sharma",
-                "phone": "+91 9848200010",
-                "city": "Warangal",
-                "coverage": "Hanamkonda, Warangal, Karimnagar"
+                "name": "Gaire Freshpod Pvt ltd",
+                "phone": "+977 9857025337",
+                "city": "Butwal",
+                "coverage": "Pan Nepal",
+                "email": "gairefreshpods@gmail.com"
             }
         ]
     },
     {
-        "state": "Maharashtra",
-        "region": "West India",
+        "state": "Ampara",
+        "region": "Sri Lanka",
         "distributors": [
             {
-                "name": "Rohit Desai",
-                "phone": "+91 9820100011",
-                "city": "Mumbai",
-                "coverage": "Mumbai, Navi Mumbai, Thane"
-            },
-            {
-                "name": "Amol Patil",
-                "phone": "+91 9820200012",
-                "city": "Pune",
-                "coverage": "Pune, Pimpri-Chinchwad, Solapur"
+                "name": "ANA SHIELD",
+                "phone": "+94 755250245 / +94 770102729",
+                "city": "Pandiruppu",
+                "coverage": "All Sri Lanka",
+                "email": "ANASHIELD30@GMAIL.COM"
             }
         ]
     }
