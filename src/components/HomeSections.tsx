@@ -182,7 +182,7 @@ export default function HomeSections() {
                             initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
                             className="space-y-6 text-lg text-muted-foreground leading-relaxed md:pt-4"
                         >
-                            <h3 className="text-2xl font-bold font-outfit text-foreground">Welcome to Freshpod!</h3>
+                            <h3 className="text-2xl font-bold font-outfit text-foreground">Welcome to <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-primary to-green-400">Freshpod!</span></h3>
                             <p>
                                 At Freshpod, we are on a mission to redefine hygiene and safety for bikers by revolutionizing the way helmets are cleaned and maintained. Our journey began with a simple yet powerful idea—to provide a quick, effective, and accessible solution for helmet cleanliness.
                             </p>
