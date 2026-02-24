@@ -21,6 +21,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   /* config options here */
+  env: {
+    NEXT_PUBLIC_CONTACT_SECRET: process.env.NEXT_PUBLIC_CONTACT_SECRET,
+  },
   reactCompiler: true,
   async headers() {
     return [
