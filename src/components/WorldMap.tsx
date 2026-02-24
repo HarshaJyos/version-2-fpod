@@ -1,13 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import {
-    ComposableMap,
-    Geographies,
-    Geography,
-    Marker,
-    ZoomableGroup,
-} from "react-simple-maps";
+import { useState, useEffect, useMemo } from "react";
+import { geoMercator, geoPath } from "d3-geo";
+import { feature } from "topojson-client";
 import { motion, AnimatePresence } from "framer-motion";
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -28,55 +23,74 @@ const MARKERS = [
 
 export default function WorldMap() {
     const [tooltip, setTooltip] = useState<{ label: string; flag: string; desc: string } | null>(null);
+    const [geographies, setGeographies] = useState<any[]>([]);
+
+    useEffect(() => {
+        fetch(GEO_URL)
+            .then(response => response.json())
+            .then(topology => {
+                const world = feature(topology, topology.objects.countries) as any;
+                setGeographies(world.features);
+            });
+    }, []);
+
+    const width = 800;
+    const height = 400;
+
+    const projection = useMemo(() => {
+        return geoMercator()
+            .scale(140)
+            .center([20, 15])
+            .translate([width / 2, height / 2]);
+    }, []);
+
+    const pathGenerator = useMemo(() => geoPath().projection(projection), [projection]);
 
     return (
-        <div className="relative w-full rounded-3xl overflow-hidden bg-[#0f1729] shadow-2xl border border-white/10">
+        <div className="relative w-full rounded-3xl overflow-hidden bg-[#0f1729] shadow-2xl border border-white/10" style={{ aspectRatio: `${width} / ${height}` }}>
             {/* Glow */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,197,94,0.08)_0%,transparent_70%)] pointer-events-none" />
 
-            <ComposableMap
-                projection="geoMercator"
-                projectionConfig={{ scale: 140, center: [20, 15] }}
-                style={{ width: "100%", height: "auto" }}
+            <svg
+                width="100%"
+                height="100%"
+                viewBox={`0 0 ${width} ${height}`}
+                className="w-full h-auto"
             >
-                <ZoomableGroup zoom={1} minZoom={1} maxZoom={1}>
-                    <Geographies geography={GEO_URL}>
-                        {({ geographies }: { geographies: any[] }) =>
-                            geographies.map((geo) => {
-                                const numId = String(geo.id);
-                                const active = ACTIVE[numId];
-                                return (
-                                    <Geography
-                                        key={geo.rsmKey}
-                                        geography={geo}
-                                        fill={active ? "#6cebf9" : "#1e2d4a"}
-                                        stroke="#0f1729"
-                                        strokeWidth={0.4}
-                                        style={{
-                                            default: { outline: "none", opacity: active ? 1 : 0.7 },
-                                            hover: { fill: active ? "#99f5ffff" : "#243352", outline: "none", cursor: active ? "pointer" : "default" },
-                                            pressed: { outline: "none" },
-                                        }}
-                                        onMouseEnter={() => active && setTooltip(active)}
-                                        onMouseLeave={() => setTooltip(null)}
-                                    />
-                                );
-                            })
-                        }
-                    </Geographies>
+                <g>
+                    {geographies.map((geo, i) => {
+                        const numId = String(geo.id);
+                        const active = ACTIVE[numId];
+                        return (
+                            <path
+                                key={`geo-${i}`}
+                                d={pathGenerator(geo) || ""}
+                                fill={active ? "#6cebf9" : "#1e2d4a"}
+                                stroke="#0f1729"
+                                strokeWidth={0.4}
+                                className={active ? "cursor-pointer hover:fill-[#99f5ffff] transition-colors duration-200" : "opacity-70"}
+                                onMouseEnter={() => active && setTooltip(active)}
+                                onMouseLeave={() => setTooltip(null)}
+                                style={{ outline: "none" }}
+                            />
+                        );
+                    })}
 
                     {/* Animated pin markers */}
-                    {MARKERS.map((m) => (
-                        <Marker key={m.id} coordinates={m.coordinates}>
-                            <circle r={5} fill="#27c0d1ff" stroke="#fff" strokeWidth={1.5} opacity={0.9} />
-                            <circle r={10} fill="#27c0d1ff" opacity={0.25}>
-                                <animate attributeName="r" values="6;14;6" dur="2.5s" repeatCount="indefinite" />
-                                <animate attributeName="opacity" values="0.4;0;0.4" dur="2.5s" repeatCount="indefinite" />
-                            </circle>
-                        </Marker>
-                    ))}
-                </ZoomableGroup>
-            </ComposableMap>
+                    {MARKERS.map((m) => {
+                        const [x, y] = projection(m.coordinates) || [0, 0];
+                        return (
+                            <g key={m.id} transform={`translate(${x}, ${y})`}>
+                                <circle r={5} fill="#27c0d1ff" stroke="#fff" strokeWidth={1.5} opacity={0.9} />
+                                <circle r={10} fill="#27c0d1ff" opacity={0.25}>
+                                    <animate attributeName="r" values="6;14;6" dur="2.5s" repeatCount="indefinite" />
+                                    <animate attributeName="opacity" values="0.4;0;0.4" dur="2.5s" repeatCount="indefinite" />
+                                </circle>
+                            </g>
+                        );
+                    })}
+                </g>
+            </svg>
 
             {/* Tooltip */}
             <AnimatePresence>

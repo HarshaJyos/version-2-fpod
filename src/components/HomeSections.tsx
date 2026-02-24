@@ -132,7 +132,7 @@ export default function HomeSections() {
                 className="relative h-[90vh] flex items-center justify-center overflow-hidden"
             >
                 <motion.div
-                    style={{ y: yBg, backgroundImage: "url('/images/biker bg.webp')" }}
+                    style={{ y: yBg, backgroundImage: "url('/images/biker bg.webp')" } as any}
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 />
                 <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-black/40 to-background/20" />
