@@ -16,12 +16,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Freshpod - India's Helmet sanitizing and cleaning machine",
-  description: "FreshPod is compact, cost-effective, and versatile helmet sanitizing machine. The ultimate ShieldX alternative for rideshare companies, delivery hubs, and bike rental services in India.",
-  keywords: "FreshPod India, helmet cleaning, FreshPod, helmet, ShieldX, ShieldX alternative, helmet sanitizing machine",
+  title: "Freshpod - India's Best Helmet Sanitizing Machine",
+  description: "FreshPod is India's first and best helmet sanitizing machine. A compact, cost-effective, and versatile solution designed to eliminate 99.9% of bacteria, fungi, and odors in minutes using advanced UV and ozone technology.",
+  keywords: "FreshPod India, helmet sanitization machine, helmet cleaning machine, India's best helmet cleaner, UV helmet disinfection, helmet hygiene, FreshPod",
   openGraph: {
-    title: "Freshpod - India | Premium ShieldX Alternative",
-    description: "FreshPod is compact, cost-effective, and versatile, making it an ideal addition for rideshare companies, delivery hubs, bike rental services, and beyond. Together, we aim to set a new standard.",
+    title: "Freshpod - India's Best Helmet Sanitizing Machine",
+    description: "FreshPod is India's first and best helmet sanitizing machine. Discover the ultimate solution for helmet hygiene, eliminating bacteria, fungi, and odors in minutes.",
     url: "https://freshpod.in",
     siteName: "Freshpod",
     images: [
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freshpod - India",
-    description: "FreshPod is compact, cost-effective, and versatile...",
+    title: "Freshpod - India's Best Helmet Sanitizing Machine",
+    description: "FreshPod is India's first and best helmet sanitizing machine, designed to eliminate 99.9% of bacteria and odors.",
     images: ["https://freshpod.in/images/finalMachine.png"],
   },
 };
@@ -55,7 +55,7 @@ export default function RootLayout({
       "name": "FreshPod",
       "url": "https://www.freshpod.in",
       "logo": "https://freshpod.in/images/GOGO.png",
-      "description": "Premium Helmet Sanitizing and Disinfecting Machine in India. The ultimate alternative to ShieldX for hygiene, saving costs, and extending helmet life.",
+      "description": "India's first and best Helmet Sanitizing and Disinfecting Machine. A premium solution for hygiene, eliminating 99.9% of bacteria and odors, and extending helmet life.",
       "areaServed": "India",
       "telephone": "+91-7815908571",
       "email": "hello@freshpod.in"
@@ -64,7 +64,7 @@ export default function RootLayout({
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Freshpod Helmet Disinfecting Machine",
-      "description": "An automated machine designed to disinfect, clean, and deodorize helmets in minutes using innovative UV and ozone technology.",
+      "description": "India's best automated machine designed to disinfect, clean, and deodorize helmets in minutes using innovative UV and ozone technology.",
       "brand": {
         "@type": "Brand",
         "name": "FreshPod"
@@ -78,7 +78,7 @@ export default function RootLayout({
         "name": "What is the best helmet cleaning machine in India?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "FreshPod is widely considered the best helmet cleaning machine in India, offering advanced sanitization, fast cleaning cycles, and cost optimization for both individuals and aggregate delivery businesses, serving as a premium alternative to ShieldX."
+          "text": "FreshPod is widely considered the first and best helmet cleaning machine in India, offering advanced UV and ozone sanitization, fast cleaning cycles, and cost optimization for every rider."
         }
       }, {
         "@type": "Question",
