@@ -17,7 +17,7 @@ const fadeUp: any = {
 
 function TextBlock({ data }: { data: any }) {
     return (
-        <motion.p variants={fadeUp} className="text-base md:text-lg text-foreground/85 leading-relaxed text-justify">
+        <motion.p variants={fadeUp} className="text-base md:text-lg text-foreground/85 leading-relaxed text-justify whitespace-pre-wrap">
             {data.body}
         </motion.p>
     );
@@ -27,7 +27,7 @@ function SectionBlock({ data }: { data: any }) {
     return (
         <motion.div variants={fadeUp} className="space-y-3">
             <h2 className="text-xl md:text-2xl font-bold font-outfit text-foreground">{data.heading}</h2>
-            <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-justify">{data.body}</p>
+            <p className="text-base md:text-lg text-foreground/80 leading-relaxed text-justify whitespace-pre-wrap">{data.body}</p>
         </motion.div>
     );
 }
@@ -78,7 +78,7 @@ function ListBlock({ data }: { data: any }) {
 
 function QuoteBlock({ data }: { data: any }) {
     return (
-        <motion.blockquote variants={fadeUp} className="border-l-4 border-primary pl-5 py-1 italic text-lg text-foreground/75 leading-relaxed relative">
+        <motion.blockquote variants={fadeUp} className="border-l-4 border-primary pl-5 py-1 italic text-lg text-foreground/75 leading-relaxed relative whitespace-pre-wrap">
             <Quote className="absolute -top-2 -left-2 w-5 h-5 text-primary/40" />
             {data.body}
         </motion.blockquote>

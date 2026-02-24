@@ -91,25 +91,25 @@ function Pagination({ total, current, perPage, onChange }: { total: number; curr
 // ─────────────────────────────────────────
 // Sidebar Filter Card (Desktop)
 // ─────────────────────────────────────────
-function SidebarFilters({ allTags, activeTag, onTag, hasFilters, onClear }: {
-    allTags: string[]; activeTag: string; onTag: (t: string) => void; hasFilters: boolean; onClear: () => void;
+function SidebarFilters({ allAuthors, activeAuthor, onAuthor, hasFilters, onClear }: {
+    allAuthors: string[]; activeAuthor: string; onAuthor: (a: string) => void; hasFilters: boolean; onClear: () => void;
 }) {
     return (
         <aside className="w-56 flex-shrink-0 hidden lg:block">
             <div className="sticky top-28 bg-white border border-border/50 rounded-2xl shadow-sm overflow-hidden">
                 <div className="px-5 py-4 border-b border-border/40 flex items-center justify-between">
-                    <h3 className="font-semibold font-outfit text-foreground text-sm">Topics</h3>
+                    <h3 className="font-semibold font-outfit text-foreground text-sm">Authors</h3>
                     {hasFilters && (
                         <button onClick={onClear} className="text-xs text-primary hover:underline font-medium">Clear</button>
                     )}
                 </div>
                 <nav className="px-3 py-3 space-y-0.5">
-                    {allTags.map((tag) => {
-                        const active = activeTag === tag;
+                    {allAuthors.map((author) => {
+                        const active = activeAuthor === author;
                         return (
-                            <button key={tag} onClick={() => onTag(tag)}
+                            <button key={author} onClick={() => onAuthor(author)}
                                 className={`w-full flex items-center justify-between gap-2 px-3 py-2.5 rounded-xl text-sm font-medium transition-all text-left ${active ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted/60 hover:text-foreground"}`}>
-                                <span className="truncate">{tag}</span>
+                                <span className="truncate">{author}</span>
                                 {active && <Check className="w-3.5 h-3.5 flex-shrink-0 text-primary" />}
                             </button>
                         );
@@ -123,9 +123,9 @@ function SidebarFilters({ allTags, activeTag, onTag, hasFilters, onClear }: {
 // ─────────────────────────────────────────
 // Mobile Filter Bottom Sheet
 // ─────────────────────────────────────────
-function MobileFilterSheet({ open, onClose, allTags, activeTag, onTag, onClear, hasFilters }: {
-    open: boolean; onClose: () => void; allTags: string[]; activeTag: string;
-    onTag: (t: string) => void; onClear: () => void; hasFilters: boolean;
+function MobileFilterSheet({ open, onClose, allAuthors, activeAuthor, onAuthor, onClear, hasFilters }: {
+    open: boolean; onClose: () => void; allAuthors: string[]; activeAuthor: string;
+    onAuthor: (a: string) => void; onClear: () => void; hasFilters: boolean;
 }) {
     // Lock body scroll when open
     useEffect(() => {
@@ -151,19 +151,19 @@ function MobileFilterSheet({ open, onClose, allTags, activeTag, onTag, onClear, 
                         </div>
                         {/* Header */}
                         <div className="flex items-center justify-between px-5 py-3 border-b border-border/40">
-                            <h3 className="font-bold font-outfit text-foreground">Filter by Topic</h3>
+                            <h3 className="font-bold font-outfit text-foreground">Filter by Author</h3>
                             <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-muted transition-colors">
                                 <X className="w-4 h-4 text-muted-foreground" />
                             </button>
                         </div>
                         {/* Tags list — scrollable */}
                         <div className="flex-1 overflow-y-auto px-4 py-3 space-y-1">
-                            {allTags.map((tag) => {
-                                const active = activeTag === tag;
+                            {allAuthors.map((author) => {
+                                const active = activeAuthor === author;
                                 return (
-                                    <button key={tag} onClick={() => { onTag(tag); onClose(); }}
+                                    <button key={author} onClick={() => { onAuthor(author); onClose(); }}
                                         className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all text-left ${active ? "bg-primary/10 text-primary border border-primary/20" : "text-muted-foreground hover:bg-muted/60 hover:text-foreground border border-transparent"}`}>
-                                        <span>{tag}</span>
+                                        <span>{author}</span>
                                         {active && <Check className="w-4 h-4 text-primary" />}
                                     </button>
                                 );
@@ -190,35 +190,37 @@ function MobileFilterSheet({ open, onClose, allTags, activeTag, onTag, onClear, 
 // ─────────────────────────────────────────
 export default function BlogClient({ blogs }: { blogs: any[] }) {
     const [search, setSearch] = useState("");
-    const [activeTag, setActiveTag] = useState("All");
+    const [activeAuthor, setActiveAuthor] = useState("All");
     const [page, setPage] = useState(1);
     const [sheetOpen, setSheetOpen] = useState(false);
 
-    const allTags = useMemo(() => {
+    const allAuthors = useMemo(() => {
         const s = new Set<string>();
-        blogs.forEach((b) => b.tags?.forEach((t: string) => s.add(t)));
+        blogs.forEach((b) => {
+            if (b.author) s.add(b.author);
+        });
         return ["All", ...Array.from(s)];
     }, [blogs]);
 
     const filtered = useMemo(() => {
         const q = search.toLowerCase().trim();
         return blogs.filter((post) => {
-            const matchTag = activeTag === "All" || post.tags?.includes(activeTag);
-            const matchSearch = !q || post.title.toLowerCase().includes(q) || post.description.toLowerCase().includes(q) || post.tags?.some((t: string) => t.toLowerCase().includes(q));
-            return matchTag && matchSearch;
+            const matchAuthor = activeAuthor === "All" || post.author === activeAuthor;
+            const matchSearch = !q || post.title.toLowerCase().includes(q) || post.description.toLowerCase().includes(q) || (post.author && post.author.toLowerCase().includes(q));
+            return matchAuthor && matchSearch;
         });
-    }, [blogs, search, activeTag]);
+    }, [blogs, search, activeAuthor]);
 
     const handleSearch = useCallback((val: string) => { setSearch(val); setPage(1); }, []);
-    const handleTag = useCallback((tag: string) => { setActiveTag(tag); setPage(1); }, []);
-    const handleClear = useCallback(() => { setSearch(""); setActiveTag("All"); setPage(1); }, []);
+    const handleAuthor = useCallback((author: string) => { setActiveAuthor(author); setPage(1); }, []);
+    const handleClear = useCallback(() => { setSearch(""); setActiveAuthor("All"); setPage(1); }, []);
 
     const paginated = useMemo(() => {
         const start = (page - 1) * POSTS_PER_PAGE;
         return filtered.slice(start, start + POSTS_PER_PAGE);
     }, [filtered, page]);
 
-    const hasFilters = search !== "" || activeTag !== "All";
+    const hasFilters = search !== "" || activeAuthor !== "All";
 
     const handlePageChange = (p: number) => {
         setPage(p);
@@ -263,10 +265,10 @@ export default function BlogClient({ blogs }: { blogs: any[] }) {
 
                         {/* Mobile: Filter button */}
                         <button onClick={() => setSheetOpen(true)}
-                            className={`lg:hidden flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all ${hasFilters && activeTag !== "All" ? "border-primary bg-primary/10 text-primary" : "border-border/60 text-muted-foreground hover:border-primary/40 hover:text-primary"}`}>
+                            className={`lg:hidden flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all ${hasFilters && activeAuthor !== "All" ? "border-primary bg-primary/10 text-primary" : "border-border/60 text-muted-foreground hover:border-primary/40 hover:text-primary"}`}>
                             <SlidersHorizontal className="w-4 h-4" />
-                            <span>Filters{hasFilters && activeTag !== "All" ? " ·" : ""}</span>
-                            {hasFilters && activeTag !== "All" && (
+                            <span>Filters{hasFilters && activeAuthor !== "All" ? " ·" : ""}</span>
+                            {hasFilters && activeAuthor !== "All" && (
                                 <span className="w-5 h-5 bg-primary text-primary-foreground text-xs font-bold rounded-full flex items-center justify-center">1</span>
                             )}
                         </button>
@@ -288,11 +290,11 @@ export default function BlogClient({ blogs }: { blogs: any[] }) {
 
                     {/* Desktop Sidebar */}
                     <SidebarFilters
-                        allTags={allTags}
-                        activeTag={activeTag}
-                        onTag={handleTag}
-                        hasFilters={activeTag !== "All"}
-                        onClear={() => handleTag("All")}
+                        allAuthors={allAuthors}
+                        activeAuthor={activeAuthor}
+                        onAuthor={handleAuthor}
+                        hasFilters={activeAuthor !== "All"}
+                        onClear={() => handleAuthor("All")}
                     />
 
                     {/* Main Content */}
@@ -306,7 +308,7 @@ export default function BlogClient({ blogs }: { blogs: any[] }) {
 
                         <AnimatePresence mode="wait">
                             {paginated.length > 0 ? (
-                                <motion.div key={`${search}-${activeTag}-${page}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
+                                <motion.div key={`${search}-${activeAuthor}-${page}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
                                     className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
                                     {paginated.map((post: any) => <BlogCard key={post.slug} post={post} />)}
                                 </motion.div>
@@ -332,11 +334,11 @@ export default function BlogClient({ blogs }: { blogs: any[] }) {
             <MobileFilterSheet
                 open={sheetOpen}
                 onClose={() => setSheetOpen(false)}
-                allTags={allTags}
-                activeTag={activeTag}
-                onTag={handleTag}
+                allAuthors={allAuthors}
+                activeAuthor={activeAuthor}
+                onAuthor={handleAuthor}
                 onClear={handleClear}
-                hasFilters={activeTag !== "All"}
+                hasFilters={activeAuthor !== "All"}
             />
         </div>
     );

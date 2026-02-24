@@ -398,7 +398,7 @@ export default function HomeSections() {
                             <AccordionItem value="item-1" className="border border-border/50 rounded-xl px-4 bg-background data-[state=open]:bg-white data-[state=open]:shadow-md transition-all">
                                 <AccordionTrigger className="text-xl font-semibold font-outfit hover:text-primary hover:no-underline py-6">What is the best helmet cleaning machine in India?</AccordionTrigger>
                                 <AccordionContent className="text-muted-foreground text-lg leading-relaxed pb-6">
-                                    FreshPod is widely considered the best helmet cleaning machine in India, offering advanced sanitization, fast cleaning cycles, and cost optimization for both individuals and aggregate delivery businesses, serving as a premium alternative to ShieldX.
+                                    FreshPod is widely considered the best helmet cleaning machine in India, offering advanced sanitization, fast cleaning cycles, and cost optimization for both individuals and aggregate delivery businesses, serving as a India's fast and best helmet cleaning machine.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-2" className="border border-border/50 rounded-xl px-4 bg-background data-[state=open]:bg-white data-[state=open]:shadow-md transition-all">

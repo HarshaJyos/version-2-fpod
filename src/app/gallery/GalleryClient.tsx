@@ -13,8 +13,6 @@ const allImages = [
     { src: "/images/FM_4.png", alt: "FreshPod Machine – Detail", category: "Product" },
     { src: "/images/odor.jpg", alt: "Odor Free Experience", category: "Features" },
     { src: "/images/odor free.png", alt: "Odor Free Experience", category: "Features" },
-
-
 ];
 
 const ALL_CATS = ["All", ...Array.from(new Set(allImages.map((img) => img.category)))];
