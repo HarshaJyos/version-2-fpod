@@ -59,7 +59,7 @@ export default function AboutClient() {
             </section>
 
             {/* STORY + CAROUSEL — matches homepage About section */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-white overflow-hidden">
                 <div className="container px-4">
 
                     <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">

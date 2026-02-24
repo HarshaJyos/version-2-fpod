@@ -11,14 +11,10 @@ const allImages = [
     { src: "/images/FM_2.png", alt: "FreshPod Machine – Side View", category: "Product" },
     { src: "/images/FM_3.png", alt: "FreshPod Machine – Angle View", category: "Product" },
     { src: "/images/FM_4.png", alt: "FreshPod Machine – Detail", category: "Product" },
-    { src: "/images/advanced sanitization.jpg", alt: "Advanced Sanitization Technology", category: "Features" },
-    { src: "/images/TimeSaving.jpg", alt: "Time Saving Efficiency", category: "Features" },
     { src: "/images/odor.jpg", alt: "Odor Free Experience", category: "Features" },
-    { src: "/images/easy to use.png", alt: "Easy to Use Interface", category: "Features" },
-    { src: "/images/CostOptimization.jpg", alt: "Cost Optimization", category: "Benefits" },
-    { src: "/images/Machine.png", alt: "FreshPod Machine Alternative View", category: "Product" },
-    { src: "/images/profit.jpg", alt: "Business Benefits", category: "Business" },
-    { src: "/images/racing-helmet.png", alt: "Racing Helmet Sanitization", category: "Use Cases" },
+    { src: "/images/odor free.png", alt: "Odor Free Experience", category: "Features" },
+
+
 ];
 
 const ALL_CATS = ["All", ...Array.from(new Set(allImages.map((img) => img.category)))];

@@ -243,7 +243,7 @@ export default function DistributorsClient() {
             </section>
 
             {/* ── BECOME A DISTRIBUTOR ─────────────────────────────── */}
-            <section className="py-16 md:py-24 bg-white">
+            <section className="py-16 md:py-24 bg-white overflow-hidden">
                 <div className="container px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center max-w-5xl mx-auto">
                         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}

@@ -163,7 +163,7 @@ export default function HomeSections() {
             </section>
 
             {/* ABOUT US */}
-            <section id="about" className="py-24 bg-white">
+            <section id="about" className="py-16 md:py-24 bg-white overflow-hidden">
                 <div className="container px-4">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeIn}
@@ -212,7 +212,7 @@ export default function HomeSections() {
             </section>
 
             {/* VIKSIT BHARAT */}
-            <section id="viksit-bharat" className="py-32 relative overflow-hidden bg-white flex items-center justify-center min-h-[60vh] w-full">
+            <section id="viksit-bharat" className="py-16 md:py-24 relative overflow-hidden bg-white flex items-center justify-center min-h-[40vh] w-full">
                 {/* Flag SVG Background */}
                 <div
                     className="absolute inset-0 z-0 opacity-65 w-full bg-center bg-no-repeat bg-[length:auto_100%] md:bg-[length:100%_100%] lg:bg-[length:100%_auto]"
@@ -242,7 +242,7 @@ export default function HomeSections() {
             </section>
 
             {/* WHAT MAKES US DIFFERENT */}
-            <section className="py-24 bg-background">
+            <section className="py-16 md:py-24 bg-background">
                 <div className="container px-4">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
@@ -283,7 +283,7 @@ export default function HomeSections() {
             </section>
 
             {/* FEATURES */}
-            <section id="features" className="py-24 bg-white">
+            <section id="features" className="py-16 md:py-24 bg-white">
                 <div className="container px-4 max-w-6xl mx-auto">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
@@ -328,7 +328,7 @@ export default function HomeSections() {
             </section>
 
             {/* PROCEDURE */}
-            <section className="py-24 bg-background">
+            <section className="py-16 md:py-24 bg-background overflow-hidden">
                 <div className="container px-4">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
@@ -367,7 +367,7 @@ export default function HomeSections() {
 
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="rounded-2xl overflow-hidden shadow-2xl bg-black aspect-[9/16] max-h-[70vh] w-full md:w-3/4 mx-auto border-4 border-white/10"
+                            className="rounded-2xl overflow-hidden shadow-2xl bg-black aspect-[9/16] max-h-[70vh] w-full mx-auto border-4 border-white/10"
                         >
                             <video
                                 src="/videos/VID-20241202-WA0003 1.mp4"
@@ -382,7 +382,7 @@ export default function HomeSections() {
             </section>
 
             {/* FAQ */}
-            <section className="py-24 bg-white">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container px-4 max-w-4xl mx-auto">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
@@ -431,7 +431,7 @@ export default function HomeSections() {
             </section>
 
             {/* CONTACT FORM */}
-            <section id="contact" className="py-24 bg-background">
+            <section id="contact" className="py-16 md:py-24 bg-background">
                 <div className="container px-4">
                     <motion.div
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}
