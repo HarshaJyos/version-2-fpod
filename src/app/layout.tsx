@@ -54,7 +54,7 @@ export default function RootLayout({
       "@type": "LocalBusiness",
       "name": "FreshPod",
       "url": "https://www.freshpod.in",
-      "logo": "https://freshpod.in/images/Logo.jpg",
+      "logo": "https://freshpod.in/images/GOGO.png",
       "description": "Premium Helmet Sanitizing and Disinfecting Machine in India. The ultimate alternative to ShieldX for hygiene, saving costs, and extending helmet life.",
       "areaServed": "India",
       "telephone": "+91-7815908571",

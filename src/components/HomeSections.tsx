@@ -23,6 +23,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
 import {
     Settings, Leaf, TrendingUp, Users, ShieldCheck, Clock,
     Pipette, Zap, Coins, HeartPulse, QrCode, DoorOpen, HardHat,
@@ -145,11 +146,18 @@ export default function HomeSections() {
                         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                         className="mt-10"
                     >
-                        <Link href="#contact">
-                            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full shadow-xl shadow-primary/20 transition-transform hover:scale-105">
-                                Get In Touch
-                            </Button>
-                        </Link>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link href="#contact">
+                                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full shadow-xl shadow-primary/20 transition-transform hover:scale-105">
+                                    Get In Touch
+                                </Button>
+                            </Link>
+                            <Link href="/distributors">
+                                <Button size="lg" variant="outline" className="text-white border-white/40 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-lg px-8 py-6 rounded-full transition-transform hover:scale-105">
+                                    Find Distributors
+                                </Button>
+                            </Link>
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -169,10 +177,10 @@ export default function HomeSections() {
                         </p>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="space-y-6 text-lg text-muted-foreground leading-relaxed"
+                            className="space-y-6 text-lg text-muted-foreground leading-relaxed md:pt-4"
                         >
                             <h3 className="text-2xl font-bold font-outfit text-foreground">Welcome to Freshpod!</h3>
                             <p>
@@ -187,40 +195,17 @@ export default function HomeSections() {
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="relative w-full rounded-2xl overflow-hidden shadow-2xl hover:shadow-primary/20 transition-shadow duration-500 bg-muted"
+                            className="w-full mx-auto max-w-xs md:max-w-none"
                         >
-                            <Carousel
-                                plugins={[
-                                    Autoplay({
-                                        delay: 3000,
-                                    }),
+                            <InfiniteCarousel
+                                images={[
+                                    { src: "/images/FM_1.png", alt: "FreshPod Machine – View 1" },
+                                    { src: "/images/FM_2.png", alt: "FreshPod Machine – View 2" },
+                                    { src: "/images/FM_3.png", alt: "FreshPod Machine – View 3" },
+                                    { src: "/images/FM_4.png", alt: "FreshPod Machine – View 4" },
                                 ]}
-                                className="w-full"
-                            >
-                                <CarouselContent>
-                                    {[
-                                        "/images/finalMachine.png",
-                                        "/images/Machine.png",
-                                        "/images/advanced sanitization.jpg",
-                                        "/images/TimeSaving.jpg"
-                                    ].map((src, index) => (
-                                        <CarouselItem key={index}>
-                                            <div className="relative h-[400px] md:h-[500px] w-full">
-                                                <Image
-                                                    src={src}
-                                                    alt={`Freshpod Machine view ${index + 1}`}
-                                                    fill
-                                                    className="object-cover"
-                                                />
-                                            </div>
-                                        </CarouselItem>
-                                    ))}
-                                </CarouselContent>
-                                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                                    <CarouselPrevious className="relative inset-0 translate-y-0 h-10 w-10 bg-white/50 hover:bg-white backdrop-blur-sm border-none shadow-lg" />
-                                    <CarouselNext className="relative inset-0 translate-y-0 h-10 w-10 bg-white/50 hover:bg-white backdrop-blur-sm border-none shadow-lg" />
-                                </div>
-                            </Carousel>
+                                interval={3200}
+                            />
                         </motion.div>
                     </div>
                 </div>
@@ -389,7 +374,7 @@ export default function HomeSections() {
                                 controls
                                 muted
                                 className="w-full h-full object-cover"
-                                poster="/images/finalMachine.png"
+                                poster="/images/FM_1.png"
                             />
                         </motion.div>
                     </div>

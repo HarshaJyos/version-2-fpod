@@ -1,0 +1,110 @@
+[
+    {
+        "state": "Kerala",
+        "region": "South India",
+        "distributors": [
+            {
+                "name": "Rahul Menon",
+                "phone": "+91 9847100001",
+                "city": "Kochi",
+                "coverage": "Ernakulam, Thrissur, Palakkad"
+            },
+            {
+                "name": "Suresh Pillai",
+                "phone": "+91 9847200002",
+                "city": "Thiruvananthapuram",
+                "coverage": "Thiruvananthapuram, Kollam, Pathanamthitta"
+            }
+        ]
+    },
+    {
+        "state": "Karnataka",
+        "region": "South India",
+        "distributors": [
+            {
+                "name": "Manjunath Reddy",
+                "phone": "+91 9900100003",
+                "city": "Bengaluru",
+                "coverage": "Bengaluru Urban, Bengaluru Rural, Ramanagara"
+            },
+            {
+                "name": "Prakash Gowda",
+                "phone": "+91 9900200004",
+                "city": "Mysuru",
+                "coverage": "Mysuru, Mandya, Chamarajanagar"
+            }
+        ]
+    },
+    {
+        "state": "Tamil Nadu",
+        "region": "South India",
+        "distributors": [
+            {
+                "name": "Karthik Rajan",
+                "phone": "+91 9444100005",
+                "city": "Chennai",
+                "coverage": "Chennai, Kancheepuram, Tiruvallur"
+            },
+            {
+                "name": "Vijay Anand",
+                "phone": "+91 9444200006",
+                "city": "Coimbatore",
+                "coverage": "Coimbatore, Tiruppur, Erode"
+            }
+        ]
+    },
+    {
+        "state": "Andhra Pradesh",
+        "region": "South India",
+        "distributors": [
+            {
+                "name": "Srinivas Rao",
+                "phone": "+91 9963100007",
+                "city": "Vijayawada",
+                "coverage": "Krishna, Guntur, NTR District"
+            },
+            {
+                "name": "Venkat Naidu",
+                "phone": "+91 9963200008",
+                "city": "Visakhapatnam",
+                "coverage": "Visakhapatnam, Vizianagaram, Srikakulam"
+            }
+        ]
+    },
+    {
+        "state": "Telangana",
+        "region": "South India",
+        "distributors": [
+            {
+                "name": "Ramesh Kumar",
+                "phone": "+91 9848100009",
+                "city": "Hyderabad",
+                "coverage": "Hyderabad, Rangareddy, Medchal-Malkajgiri"
+            },
+            {
+                "name": "Ashok Sharma",
+                "phone": "+91 9848200010",
+                "city": "Warangal",
+                "coverage": "Hanamkonda, Warangal, Karimnagar"
+            }
+        ]
+    },
+    {
+        "state": "Maharashtra",
+        "region": "West India",
+        "distributors": [
+            {
+                "name": "Rohit Desai",
+                "phone": "+91 9820100011",
+                "city": "Mumbai",
+                "coverage": "Mumbai, Navi Mumbai, Thane"
+            },
+            {
+                "name": "Amol Patil",
+                "phone": "+91 9820200012",
+                "city": "Pune",
+                "coverage": "Pune, Pimpri-Chinchwad, Solapur"
+            }
+        ]
+    }
+]

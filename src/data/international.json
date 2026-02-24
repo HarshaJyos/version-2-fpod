@@ -1,0 +1,32 @@
+[
+    {
+        "country": "India",
+        "isoCode": "IND",
+        "status": "Headquartered",
+        "flag": "🇮🇳",
+        "description": "Freshpod's home market — active across Andhra Pradesh, Kerala, Karnataka, Tamil Nadu, Telangana, and Maharashtra.",
+        "distributors": 12,
+        "lat": 20.5937,
+        "lng": 78.9629
+    },
+    {
+        "country": "Nepal",
+        "isoCode": "NPL",
+        "status": "Active",
+        "flag": "🇳🇵",
+        "description": "Expanding distribution network serving Kathmandu and key urban centres across Nepal.",
+        "distributors": 1,
+        "lat": 28.3949,
+        "lng": 84.1240
+    },
+    {
+        "country": "Sri Lanka",
+        "isoCode": "LKA",
+        "status": "Active",
+        "flag": "🇱🇰",
+        "description": "Distribution partner covering Colombo and the Western Province, with plans to expand island-wide.",
+        "distributors": 1,
+        "lat": 7.8731,
+        "lng": 80.7718
+    }
+]
