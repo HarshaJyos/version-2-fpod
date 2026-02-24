@@ -79,7 +79,7 @@ export default function HomeSections() {
         // 🔐 ADD SECRET TOKEN (REQUIRED)
         const SECRET_TOKEN = process.env.NEXT_PUBLIC_CONTACT_SECRET;
 
-        formData.append("site_key", SECRET_TOKEN || "");
+        formData.append("site_key", SECRET_TOKEN || "freshpod_secure_2026");
 
         if (interestedIn) formData.append("Interested In", interestedIn);
         if (interestedIn === "Distribution" && selectedState) {
