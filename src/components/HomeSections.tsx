@@ -88,7 +88,7 @@ export default function HomeSections() {
 
         try {
             const response = await fetch(
-                "https://script.google.com/macros/s/AKfycbwERK4S5g9GfLLv86B2kgv6Q_CNyJ9u_fSmHNSCSU-LfiKeYUIOoshM6n808oLegiGw9w/exec",
+                "https://script.google.com/macros/s/AKfycbzSs_2AbxgpjhaZB90utLCojURO1SabKmEFg3aTxchoUHvOaz3kN4O0reOUtQY2oON9KQ/exec",
                 {
                     method: "POST",
                     body: formData,
