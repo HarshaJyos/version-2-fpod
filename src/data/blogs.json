@@ -2,9 +2,9 @@
     {
         "slug": "why-helmet-sanitization-is-no-longer-optional-in-2026",
         "title": "Why Helmet Sanitization Is No Longer Optional in 2026",
-        "banner": "/images/helmet-sanitization-2026.jpg",
-        "headline": "Your Helmet Could Be Making You Sick – Here’s Why 2026 Changes Everything",
-        "description": "Rising heat, pollution, and daily riding hours have turned helmets into hidden germ factories. Discover why proper sanitization is now non-negotiable for every biker’s health and how FreshPod makes it effortless.",
+        "banner": "/images/banners/helmet-sanitization-2026.jpg",
+        "headline": "Your Helmet Could Be Making You Sick – Let Me Explain Why",
+        "description": "Let’s talk about why cleaning your helmet is no longer just a good habit but something you truly need in 2026. With rising heat, pollution, and longer riding hours, helmet hygiene has become essential for every rider.",
         "publishedAt": "2025-05-15",
         "author": "Freshpod Editorial",
         "tags": [
@@ -26,70 +26,69 @@
         "content": {
             "hero-text": {
                 "type": "text",
-                "body": "Every morning you strap on your helmet and ride into the chaos of Indian roads. What you don’t see is the invisible battle happening inside that helmet — a warm, dark, sweat-soaked environment where bacteria, fungi, and viruses multiply at alarming speed. In 2026, with record-high temperatures, worsening urban pollution, and millions more daily riders (especially delivery partners logging 10–14 hours), ignoring helmet sanitization is no longer just unhygienic — it’s a genuine health risk."
+                "body": "Let me tell you something important. Every day, you wear your helmet and go out on the road. You feel safe because it protects your head. But have you ever thought about what is happening inside that helmet? It is warm, dark, and full of sweat after every ride. That kind of environment is perfect for tiny germs to grow. In 2026, with hotter weather and longer riding hours, ignoring helmet cleaning is not just careless — it can actually affect your health."
             },
             "section-hidden-dangers": {
                 "type": "section",
-                "heading": "What’s Really Growing Inside Your Helmet?",
-                "body": "A single ride in 35–40 °C heat can leave behind 5–10 ml of sweat soaked into the padding. That moisture, combined with dead skin cells, hair oils, and road dust, creates the perfect breeding ground for Staphylococcus aureus, Pseudomonas aeruginosa, Aspergillus mold, and even E. coli. Within 7–10 days of regular use without proper disinfection, bacterial colonies can explode by 1,000 times. The bad smell you notice after a week? That’s the unmistakable sign of microbial activity happening just millimetres from your scalp and face."
+                "heading": "What Is Actually Growing Inside Your Helmet?",
+                "body": "When you ride in 35–40°C heat, your head sweats a lot. That sweat gets absorbed into the helmet padding. Along with sweat, there are dead skin cells, hair oil, and dust from the road. All of this creates the perfect place for bacteria and fungi to grow. Some common germs found in unclean helmets include Staphylococcus aureus, Pseudomonas aeruginosa, Aspergillus mold, and even E. coli. If you do not clean your helmet properly, the number of bacteria can grow extremely fast within just a week. The bad smell you notice after a few days? That smell is a sign that germs are multiplying."
             },
             "image-bacteria": {
                 "type": "image",
-                "src": "/images/helmet-bacteria-growth.jpg",
-                "alt": "Microscopic view of bacteria and fungi growing inside uncleaned motorcycle helmet padding",
-                "caption": "Just 7 days of normal use can turn helmet padding into a thriving microbial colony"
+                "src": "/images/banners/helmet-bacteria-growth.jpg",
+                "alt": "Microscopic view of bacteria and fungi inside unclean helmet padding",
+                "caption": "After just one week of regular use without cleaning, bacteria can grow rapidly inside helmet padding."
             },
             "section-health-risks": {
                 "type": "section",
-                "heading": "Real Health Problems Bikers Face in 2026",
-                "body": "Dermatologists across India are reporting a sharp rise in helmet-related folliculitis, seborrheic dermatitis, acne mechanica, and persistent dandruff. Delivery riders who wear the same helmet 10+ hours daily are especially vulnerable — many develop chronic scalp infections that force them to take time off work. Long-term exposure to these pathogens can also trigger allergic reactions, sinus issues, and even contribute to hair thinning. The problem isn’t just discomfort; it’s preventable illness that affects your daily income and quality of life."
+                "heading": "What Health Problems Can This Cause?",
+                "body": "Doctors are seeing more cases of scalp infections caused by dirty helmets. Riders can develop itchy skin, painful bumps called folliculitis, dandruff that does not go away, pimples caused by pressure and sweat, and sometimes even hair thinning. Delivery riders who wear helmets for 10 or more hours every day are at higher risk. Over time, breathing in mold and bacteria can also cause allergies or sinus problems. This is not just about comfort — it is about protecting your health."
             },
             "section-why-2026": {
                 "type": "section",
-                "heading": "Why 2026 Is the Tipping Point",
-                "body": "Climate data shows average riding temperatures in major Indian cities have risen 2.4 °C since 2020. Urban two-wheeler sales crossed 18 million units last year, and food-delivery fleets alone now exceed 7 million riders. Post-COVID hygiene awareness has made customers and regulators far more conscious of shared-equipment safety. Bike showrooms, rental companies, colleges, and corporate campuses are already facing questions about helmet hygiene standards. In short, what was “optional” in 2023 is now table-stakes in 2026."
+                "heading": "Why Is 2026 a Turning Point?",
+                "body": "The weather is getting hotter each year. Cities are more polluted. More people are using bikes daily, especially delivery riders who spend long hours on the road. Because of this, helmets stay sweaty for longer periods. After COVID, people are also more aware of hygiene and safety. Businesses, colleges, and bike showrooms are now expected to maintain better hygiene standards. What people ignored a few years ago is now considered essential."
             },
             "section-freshpod-solution": {
                 "type": "section",
-                "heading": "FreshPod — The Award-Winning Answer",
-                "body": "FreshPod was designed exactly for this new reality. Using dual-action UV-C + ozone technology, it eliminates 99.9 % of bacteria, fungi, and viruses in just 3–5 minutes — no water, no chemicals, no damage to helmet padding or EPS foam. The machine is compact enough for any bike showroom, delivery hub, college gate, or parking area. Its international recognition includes Gold at the 38th International Innovations Exhibition Serbia, Silver medals at BRICS Brazil, China & Malaysia, and Bronze at IPITEX Bangkok — proving that Indian innovation is setting global benchmarks in helmet hygiene."
+                "heading": "How FreshPod Makes It Easy",
+                "body": "FreshPod is designed to solve this exact problem. It uses UV-C light and ozone technology to kill 99.9% of bacteria, fungi, and viruses in just 3–5 minutes. There is no water and no harmful chemicals involved. It does not damage helmet padding, foam, or visor materials. It is quick, safe, and simple to use. That means riders, delivery hubs, colleges, and businesses can keep helmets clean without any hassle."
             },
             "cta-contact": {
                 "type": "cta",
-                "heading": "Ready to Make Helmet Sanitization Part of Your Routine?",
-                "text": "Whether you’re a daily rider, fleet owner, or business looking to offer premium hygiene, FreshPod is the smartest investment you’ll make in 2026.",
+                "heading": "Ready to Keep Your Helmet Clean and Safe?",
+                "text": "Taking care of your helmet means taking care of your health. In 2026, helmet sanitization is not optional anymore — it is necessary.",
                 "label": "Get FreshPod Today",
                 "href": "/#contact"
             }
         },
         "seo": {
-            "metaTitle": "Why Helmet Sanitization Is No Longer Optional in 2026 | FreshPod India",
-            "metaDescription": "Discover why helmet sanitization became essential in 2026 due to rising heat, pollution & riding hours. Learn how FreshPod’s UV-C + ozone technology protects rider health in just 5 minutes.",
+            "metaTitle": "Why Helmet Sanitization Is Essential in 2026 | FreshPod India",
+            "metaDescription": "Learn why cleaning your motorcycle helmet is essential in 2026 due to rising heat, pollution, and longer riding hours. Discover how FreshPod makes helmet sanitization quick and safe.",
             "keywords": [
                 "helmet sanitization 2026",
                 "helmet hygiene India",
-                "bike helmet cleaning",
-                "helmet bacteria",
+                "motorcycle helmet cleaning",
+                "helmet bacteria growth",
                 "FreshPod helmet sanitizer",
-                "rider health 2026",
-                "motorcycle helmet disinfection"
+                "rider health protection"
             ],
-            "ogImage": "/images/helmet-sanitization-2026.jpg",
+            "ogImage": "/images/banners/helmet-sanitization-2026.jpg",
             "canonicalUrl": "https://freshpod.in/blog/why-helmet-sanitization-is-no-longer-optional-in-2026",
             "schemaType": "BlogPosting",
             "aeo": {
                 "faqItems": [
                     {
                         "q": "Is helmet sanitization really necessary in 2026?",
-                        "a": "Yes. With higher temperatures and longer riding hours, bacteria multiply rapidly inside helmets. Regular sanitization prevents skin infections, hair loss, and respiratory discomfort."
+                        "a": "Yes. With higher temperatures and longer riding hours, bacteria grow quickly inside helmets. Regular sanitization helps prevent scalp infections, allergies, and bad odor."
                     },
                     {
                         "q": "How often should I sanitize my helmet?",
-                        "a": "For daily riders and delivery partners, every 3–7 days is ideal. FreshPod makes it fast and effortless — just 3–5 minutes per cycle with zero damage to the helmet."
+                        "a": "If you ride daily, sanitizing your helmet every 3–7 days is a good practice. Delivery riders may need even more frequent cleaning."
                     },
                     {
-                        "q": "Does FreshPod damage helmet padding or visor?",
-                        "a": "No. The dry UV-C + ozone process is specifically tested and proven safe for EPS foam, padding, polycarbonate visors, and all common helmet materials."
+                        "q": "Does FreshPod damage helmet materials?",
+                        "a": "No. The UV-C and ozone process is designed to be safe for helmet padding, foam, and visor materials when used properly."
                     }
                 ]
             },
@@ -103,9 +102,9 @@
     {
         "slug": "hidden-germs-inside-your-helmet-you-never-knew-about",
         "title": "Hidden Germs Inside Your Helmet You Never Knew About",
-        "banner": "/images/hidden-helmet-germs.jpg",
-        "headline": "The Invisible Threats Lurking in Your Helmet Padding",
-        "description": "Scientific studies reveal surprising bacteria and fungi thriving inside uncleaned motorcycle helmets — including drug-resistant strains. Learn what’s really growing there and why FreshPod is essential for safe riding.",
+        "banner": "/images/banners/hidden-helmet-germs.jpg",
+        "headline": "Let Me Tell You What’s Really Hiding Inside Your Helmet",
+        "description": "Most riders clean the outside of their helmet but forget what’s happening inside. Let’s break down, in simple words, the bacteria and fungi that grow in helmet padding and why proper sanitization matters.",
         "publishedAt": "2025-05-18",
         "author": "Freshpod Editorial",
         "tags": [
@@ -128,50 +127,50 @@
         "content": {
             "hero-text": {
                 "type": "text",
-                "body": "You clean your helmet's outer shell after a dusty ride and think it's good enough. But the real danger hides deep in the padding and liner — a moist, warm, rarely-seen world where germs multiply unchecked. Multiple scientific studies on motorcycle helmets have uncovered alarming levels of bacteria and fungi, including some notorious pathogens and even antibiotic-resistant strains. These aren't just theoretical risks; they're documented in real-world samples from everyday riders."
+                "body": "Let me explain something that most riders don’t realize. You may wipe the outside of your helmet after a dusty ride and feel satisfied. But the real problem is not outside — it is inside the padding. The inside of a helmet is warm, dark, and full of sweat after every ride. That is the perfect place for tiny germs to grow. Scientific studies have actually tested used helmets and found surprising amounts of bacteria and fungi living inside them."
             },
             "section-scientific-evidence": {
                 "type": "section",
-                "heading": "What Studies Actually Found in Motorcycle Helmets",
-                "body": "A detailed 2020 study analyzing 130 motorcycle helmets recovered 392 bacterial isolates and 346 fungal isolates. That's an average of over 5 bacteria and fungi per helmet — many from genera known to cause infections. Other research on commercial helmets in urban areas consistently shows high microbial loads, especially in shared or heavily used helmets. The warm, humid interior (boosted by sweat and poor ventilation) creates an ideal incubator, turning your helmet into a hidden petri dish right on your head."
+                "heading": "What Scientists Found Inside Real Helmets",
+                "body": "In one detailed study, researchers examined 130 used motorcycle helmets. They found hundreds of different bacterial and fungal samples inside them. On average, each helmet had multiple types of microbes growing in the padding. The reason is simple: sweat, heat, and poor ventilation create an ideal environment for germs. When a helmet is worn daily and not deeply cleaned, it slowly becomes like a small laboratory for bacteria."
             },
             "image-microbes": {
                 "type": "image",
-                "src": "/images/helmet-microbial-growth.jpg",
-                "alt": "Microscopic representation of bacteria and fungi isolated from uncleaned motorcycle helmet interiors",
-                "caption": "Real microbial isolates from helmet studies: Staphylococcus, Pseudomonas, Aspergillus, and more thrive in helmet padding"
+                "src": "/images/banners/helmet-microbial-growth.png",
+                "alt": "Microscopic view of bacteria and fungi growing inside helmet padding",
+                "caption": "Scientific testing shows multiple bacteria and fungi can live inside uncleaned helmet interiors."
             },
             "section-common-pathogens": {
                 "type": "section",
-                "heading": "The Usual Suspects Hiding Inside",
-                "body": "Top bacteria include Staphylococcus aureus (often 20-25% of isolates, with some MRSA — methicillin-resistant strains), Staphylococcus epidermidis, Escherichia coli, Pseudomonas aeruginosa, and Bacillus species. On the fungal side, Aspergillus niger and A. fumigatus lead, followed by Candida, Rhizopus, Penicillium, and others. Many of these are opportunistic pathogens — harmless on skin but dangerous when they cause deep infections, especially in moist environments or for people with compromised immunity, allergies, or skin conditions."
+                "heading": "Common Germs Found in Helmets",
+                "body": "Some of the bacteria commonly found include Staphylococcus aureus, Staphylococcus epidermidis, Escherichia coli (E. coli), Pseudomonas aeruginosa, and Bacillus species. Some strains of Staphylococcus can even be resistant to certain antibiotics. On the fungal side, researchers often find Aspergillus species, Candida, Rhizopus, and Penicillium. Many of these organisms normally live in the environment, but in warm and moist conditions, they can multiply quickly and cause infections."
             },
             "section-health-consequences": {
                 "type": "section",
-                "heading": "From Bad Odor to Serious Skin & Health Issues",
-                "body": "The most common complaints are persistent helmet odor, itchy scalp, dandruff-like flaking, and acne around the forehead and cheeks. But it goes further: folliculitis (infected hair follicles), seborrheic dermatitis, fungal scalp infections (like ringworm or tinea capitis), and even respiratory irritation from inhaling spores on long rides. In shared-helmet scenarios (delivery fleets, rentals), cross-contamination raises risks of transmitting resistant bacteria like MRSA or fungal spores between users."
+                "heading": "How These Germs Can Affect You",
+                "body": "At first, you may only notice a bad smell from your helmet. Then you might experience an itchy scalp, dandruff, small painful bumps, or pimples around your forehead. In some cases, riders develop folliculitis (infected hair follicles), fungal scalp infections, or skin irritation. If helmets are shared — like in delivery fleets or rental services — there is also a risk of passing germs from one person to another."
             },
             "section-why-most-riders-miss-this": {
                 "type": "section",
-                "heading": "Why These Germs Stay Hidden from Most Riders",
-                "body": "The padding is removable in many helmets but rarely deep-cleaned properly. Sprays and wipes only touch surfaces; they don't reach deep crevices or kill embedded microbes without moisture (which then promotes more growth). Sun-drying helps a bit but doesn't eliminate resistant strains or fungi. Traditional washing risks damaging EPS foam or adhesives if not done carefully. Most riders never see the microscopic reality — until the smell or irritation becomes impossible to ignore."
+                "heading": "Why Most Riders Don’t Realize the Problem",
+                "body": "The inside padding of a helmet is not always easy to clean deeply. Surface sprays and wipes only clean what you can see. Sun drying may reduce moisture but does not fully kill strong bacteria or fungi. Washing with water can sometimes damage helmet foam if not done properly. Because germs are invisible, most riders do not think about them until there is a strong smell or skin irritation."
             },
             "section-freshpod-eliminates": {
                 "type": "section",
-                "heading": "How FreshPod Reveals and Eliminates the Hidden Threat",
-                "body": "FreshPod uses a powerful combination of UV-C light and ozone to penetrate every layer of the helmet interior — killing 99.9% of bacteria (including MRSA), fungi (like Aspergillus), and viruses in a quick 3-5 minute dry cycle. No water means no risk to padding or foam integrity. Award-winning at international events (Gold Serbia 38th Innovations, Silver BRICS Brazil/China/Malaysia, Bronze IPITEX Bangkok), FreshPod turns helmet hygiene from guesswork into guaranteed protection for daily riders, delivery fleets, showrooms, and colleges."
+                "heading": "How FreshPod Helps Solve This Problem",
+                "body": "FreshPod is designed to clean helmets properly from the inside. It uses UV-C light and ozone to destroy 99.9% of bacteria and fungi in just 3–5 minutes. The process is dry, meaning no water and no chemicals are used. This helps protect the helmet padding and foam while making sure germs are eliminated. Instead of guessing whether your helmet is clean, you can be confident it is sanitized safely and effectively."
             },
             "cta-contact": {
                 "type": "cta",
-                "heading": "Stop Guessing — Start Protecting",
-                "text": "Don't let hidden germs compromise your rides or health. Discover how FreshPod can keep your helmet truly clean and safe.",
+                "heading": "Protect Yourself from Hidden Helmet Germs",
+                "text": "Now that you know what can grow inside your helmet, it makes sense to take proper action. Keeping your helmet clean means protecting your health.",
                 "label": "Contact FreshPod Team",
                 "href": "/#contact"
             }
         },
         "seo": {
-            "metaTitle": "Hidden Germs Inside Your Helmet | Bacteria & Fungi You Never Knew About | FreshPod",
-            "metaDescription": "Uncover shocking bacteria (Staphylococcus, Pseudomonas) and fungi (Aspergillus) found in uncleaned motorcycle helmets from real studies. Learn health risks and how FreshPod eliminates them with UV-C + ozone.",
+            "metaTitle": "Hidden Germs Inside Your Helmet | What’s Really Growing There",
+            "metaDescription": "Discover the bacteria and fungi commonly found inside uncleaned motorcycle helmets and understand the health risks. Learn how proper sanitization keeps riders safe.",
             "keywords": [
                 "hidden germs helmet",
                 "helmet bacteria",
@@ -179,24 +178,24 @@
                 "Staphylococcus in helmets",
                 "Aspergillus helmet",
                 "helmet padding germs",
-                "FreshPod helmet sanitizer"
+                "helmet sanitization"
             ],
-            "ogImage": "/images/hidden-helmet-germs.jpg",
+            "ogImage": "/images/banners/hidden-helmet-germs.jpg",
             "canonicalUrl": "https://freshpod.in/blog/hidden-germs-inside-your-helmet-you-never-knew-about",
             "schemaType": "BlogPosting",
             "aeo": {
                 "faqItems": [
                     {
                         "q": "What bacteria are commonly found inside motorcycle helmets?",
-                        "a": "Studies show Staphylococcus aureus (including MRSA), S. epidermidis, E. coli, Pseudomonas aeruginosa, and Bacillus spp. are prevalent, along with fungi like Aspergillus niger, A. fumigatus, and Candida."
+                        "a": "Common bacteria include Staphylococcus aureus, Staphylococcus epidermidis, E. coli, Pseudomonas aeruginosa, and Bacillus species, along with fungi such as Aspergillus and Candida."
                     },
                     {
-                        "q": "Can helmet germs cause serious health problems?",
-                        "a": "Yes — from scalp infections, folliculitis, fungal issues, acne, and odors to potential cross-contamination in shared helmets leading to resistant bacterial spread."
+                        "q": "Can helmet germs cause health problems?",
+                        "a": "Yes. They can cause bad odor, scalp infections, folliculitis, fungal issues, acne, and irritation. Shared helmets may also spread germs between users."
                     },
                     {
-                        "q": "How does FreshPod remove these hidden germs?",
-                        "a": "FreshPod's dry UV-C + ozone process penetrates deep into padding, destroying 99.9% of bacteria and fungi without water or chemicals, preserving helmet integrity."
+                        "q": "How can I properly sanitize my helmet?",
+                        "a": "Deep sanitization methods such as UV-C and ozone-based systems help eliminate bacteria and fungi effectively without damaging helmet materials."
                     }
                 ]
             },
@@ -210,7 +209,7 @@
     {
         "slug": "how-dirty-helmets-can-affect-your-skin-and-hair-health",
         "title": "How Dirty Helmets Can Affect Your Skin and Hair Health",
-        "banner": "/images/dirty-helmet-skin-hair-effects.jpg",
+        "banner": "/images/banners/dirty-helmet-skin-hair-effects.jpg",
         "headline": "The Surprising Link Between Unclean Helmets and Scalp Problems",
         "description": "Dirty helmets trap sweat, bacteria, and fungi, leading to acne, dandruff, folliculitis, infections, and even hair issues. Learn the real risks for riders and how FreshPod prevents them.",
         "publishedAt": "2025-05-21",
@@ -249,7 +248,7 @@
             },
             "image-scalp-irritation": {
                 "type": "image",
-                "src": "/images/scalp-irritation-helmet.jpg",
+                "src": "/images/banners/scalp-irritation-helmet.jpg",
                 "alt": "Close-up of irritated scalp with redness, acne, and dandruff caused by dirty helmet use",
                 "caption": "Common signs of helmet-related scalp issues: redness, clogged pores, acne, and flaky dandruff from trapped bacteria and sweat"
             },
@@ -297,7 +296,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/dirty-helmet-skin-hair-effects.jpg",
+            "ogImage": "/images/banners/dirty-helmet-skin-hair-effects.jpg",
             "canonicalUrl": "https://freshpod.in/blog/how-dirty-helmets-can-affect-your-skin-and-hair-health",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -326,7 +325,7 @@
     {
         "slug": "the-science-behind-helmet-bacteria-growth",
         "title": "The Science Behind Helmet Bacteria Growth",
-        "banner": "/images/helmet-bacteria-science.jpg",
+        "banner": "/images/banners/helmet-bacteria-science.jpg",
         "headline": "How Sweat, Heat, and Moisture Turn Your Helmet into a Microbial Incubator",
         "description": "Explore the biological and environmental factors driving rapid bacterial and fungal multiplication inside motorcycle helmets. Learn why helmets become breeding grounds and how FreshPod stops growth in minutes.",
         "publishedAt": "2025-05-24",
@@ -364,7 +363,7 @@
             },
             "image-growth-factors": {
                 "type": "image",
-                "src": "/images/bacteria-growth-diagram-helmet.jpg",
+                "src": "/images/banners/bacteria-growth-diagram-helmet.jpg",
                 "alt": "Diagram illustrating exponential bacterial growth in warm, moist helmet interior with sweat and temperature factors",
                 "caption": "Exponential curve: How one bacterium can multiply to millions in a helmet's ideal warm, humid, nutrient-rich conditions"
             },
@@ -411,7 +410,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/helmet-bacteria-science.jpg",
+            "ogImage": "/images/banners/helmet-bacteria-science.jpg",
             "canonicalUrl": "https://freshpod.in/blog/the-science-behind-helmet-bacteria-growth",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -440,7 +439,7 @@
     {
         "slug": "why-every-bike-rider-needs-helmet-disinfection",
         "title": "Why Every Bike Rider Needs Helmet Disinfection",
-        "banner": "/images/every-rider-helmet-disinfection.jpg",
+        "banner": "/images/banners/every-rider-helmet-disinfection.jpg",
         "headline": "Your Helmet Is Your Closest Companion – Keep It Truly Clean",
         "description": "From daily commuters to long-haul delivery riders, unclean helmets expose everyone to bacteria, fungi, and viruses. See why regular disinfection isn't optional anymore and how FreshPod makes it simple and effective for every rider.",
         "publishedAt": "2025-05-27",
@@ -478,7 +477,7 @@
             },
             "image-rider-helmet-closeup": {
                 "type": "image",
-                "src": "/images/rider-helmet-interior-closeup.jpg",
+                "src": "/images/banners/rider-helmet-interior-closeup.jpg",
                 "alt": "Close-up of motorcycle helmet interior showing sweat-stained padding and liner after daily use by a bike rider",
                 "caption": "Daily riding leaves visible sweat marks and hidden microbial buildup in helmet padding – a problem every rider faces"
             },
@@ -525,7 +524,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/every-rider-helmet-disinfection.jpg",
+            "ogImage": "/images/banners/every-rider-helmet-disinfection.jpg",
             "canonicalUrl": "https://freshpod.in/blog/why-every-bike-rider-needs-helmet-disinfection",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -554,7 +553,7 @@
     {
         "slug": "is-your-helmet-making-you-sick",
         "title": "Is Your Helmet Making You Sick?",
-        "banner": "/images/helmet-making-you-sick.jpg",
+        "banner": "/images/banners/helmet-making-you-sick.jpg",
         "headline": "The Sneaky Ways Your Helmet Could Be Causing Health Issues",
         "description": "Persistent headaches, itchy scalp, sinus irritation, skin rashes, and unexplained fatigue — could your helmet be the hidden culprit? Learn the real symptoms of poor helmet hygiene and why FreshPod disinfection is the fix every rider needs.",
         "publishedAt": "2025-05-29",
@@ -594,7 +593,7 @@
             },
             "image-sick-rider-helmet": {
                 "type": "image",
-                "src": "/images/rider-helmet-symptoms.jpg",
+                "src": "/images/banners/rider-helmet-symptoms.jpg",
                 "alt": "Illustration of a bike rider experiencing scalp itch, sinus headache, and skin rash potentially caused by unclean helmet",
                 "caption": "Common signs your helmet might be affecting your health: itchy scalp, sinus pressure, acne, and fatigue from microbial exposure"
             },
@@ -646,7 +645,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/helmet-making-you-sick.jpg",
+            "ogImage": "/images/banners/helmet-making-you-sick.jpg",
             "canonicalUrl": "https://freshpod.in/blog/is-your-helmet-making-you-sick",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -675,7 +674,7 @@
     {
         "slug": "how-sweat-turns-helmets-into-germ-hotspots",
         "title": "How Sweat Turns Helmets Into Germ Hotspots",
-        "banner": "/images/sweat-helmet-germ-hotspot.jpg",
+        "banner": "/images/banners/sweat-helmet-germ-hotspot.jpg",
         "headline": "The Hidden Transformation: Sweat + Helmet = Microbial Breeding Ground",
         "description": "One ride in the heat can deposit enough sweat to kickstart explosive bacterial and fungal growth inside your helmet. Understand the chemistry and biology of how sweat creates germ hotspots and why FreshPod is the only effective way to break the cycle.",
         "publishedAt": "2025-06-01",
@@ -715,7 +714,7 @@
             },
             "image-sweat-helmet-padding": {
                 "type": "image",
-                "src": "/images/sweat-soaked-helmet-padding.jpg",
+                "src": "/images/banners/sweat-soaked-helmet-padding.jpg",
                 "alt": "Close-up of motorcycle helmet padding darkened and stained by absorbed rider sweat, showing moisture retention",
                 "caption": "Sweat-soaked helmet padding retains moisture and nutrients long after the ride — the perfect starting point for germ hotspots"
             },
@@ -767,7 +766,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/sweat-helmet-germ-hotspot.jpg",
+            "ogImage": "/images/banners/sweat-helmet-germ-hotspot.jpg",
             "canonicalUrl": "https://freshpod.in/blog/how-sweat-turns-helmets-into-germ-hotspots",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -796,7 +795,7 @@
     {
         "slug": "the-health-risks-of-sharing-helmets",
         "title": "The Health Risks of Sharing Helmets",
-        "banner": "/images/shared-helmet-risks.jpg",
+        "banner": "/images/banners/shared-helmet-risks.jpg",
         "headline": "Sharing Helmets: Convenience vs. Serious Cross-Contamination Dangers",
         "description": "From delivery fleets and bike rentals to family bikes and showroom test rides, shared helmets spread bacteria, fungi, viruses, and skin infections between users. Understand the real health risks and how FreshPod eliminates them for safer shared use.",
         "publishedAt": "2025-06-04",
@@ -836,7 +835,7 @@
             },
             "image-shared-helmet-use": {
                 "type": "image",
-                "src": "/images/shared-helmet-delivery-hub.jpg",
+                "src": "/images/banners/shared-helmet-delivery-hub.jpg",
                 "alt": "Delivery riders at a hub exchanging shared helmets, highlighting cross-contamination risk in fleet operations",
                 "caption": "Delivery fleets and rental services frequently share helmets — a common practice that spreads germs between multiple users daily"
             },
@@ -888,7 +887,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/shared-helmet-risks.jpg",
+            "ogImage": "/images/banners/shared-helmet-risks.jpg",
             "canonicalUrl": "https://freshpod.in/blog/the-health-risks-of-sharing-helmets",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -917,7 +916,7 @@
     {
         "slug": "why-food-delivery-riders-need-helmet-sanitization",
         "title": "Why Food Delivery Riders Need Helmet Sanitization",
-        "banner": "/images/delivery-rider-helmet-sanitization.jpg",
+        "banner": "/images/banners/delivery-rider-helmet-sanitization.jpg",
         "headline": "Long Hours, Shared Helmets, Heavy Sweating: Why Sanitization Is Critical for Delivery Riders",
         "description": "Food delivery riders face the highest helmet hygiene risks — 10+ hour shifts, intense sweating, shared gear, and constant urban exposure. Skipping sanitization leads to infections, lost workdays, and health issues. See why FreshPod is a must-have for every delivery partner and fleet.",
         "publishedAt": "2025-06-07",
@@ -957,7 +956,7 @@
             },
             "image-delivery-rider-helmet": {
                 "type": "image",
-                "src": "/images/food-delivery-rider-helmet-sweat.jpg",
+                "src": "/images/banners/food-delivery-rider-helmet-sweat.jpg",
                 "alt": "Food delivery rider wearing helmet during long shift, showing sweat buildup and fatigue from extended use in hot weather",
                 "caption": "Delivery riders endure 10+ hour helmet wear in heat — sweat, dust, and shared use turn helmets into serious hygiene risks"
             },
@@ -1009,7 +1008,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/delivery-rider-helmet-sanitization.jpg",
+            "ogImage": "/images/banners/delivery-rider-helmet-sanitization.jpg",
             "canonicalUrl": "https://freshpod.in/blog/why-food-delivery-riders-need-helmet-sanitization",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1038,7 +1037,7 @@
     {
         "slug": "how-helmet-hygiene-impacts-public-health",
         "title": "How Helmet Hygiene Impacts Public Health",
-        "banner": "/images/helmet-hygiene-public-health.jpg",
+        "banner": "/images/banners/helmet-hygiene-public-health.jpg",
         "headline": "From Individual Riders to Entire Communities: The Broader Public Health Ripple Effects",
         "description": "Poor helmet hygiene contributes to widespread skin infections, fungal outbreaks, antibiotic resistance, and healthcare burden in India's two-wheeler-dominant cities. Explore how better sanitization — especially for millions of delivery riders and shared users — improves community health outcomes.",
         "publishedAt": "2025-06-10",
@@ -1079,7 +1078,7 @@
             },
             "image-urban-rider-crowd": {
                 "type": "image",
-                "src": "/images/urban-riders-traffic.jpg",
+                "src": "/images/banners/urban-riders-traffic.jpg",
                 "alt": "Crowd of two-wheeler riders in Indian city traffic, representing millions exposed to helmet hygiene issues in daily commuting",
                 "caption": "India's roads are filled with millions of riders every day — poor helmet hygiene in this massive population creates widespread public health implications"
             },
@@ -1136,7 +1135,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/helmet-hygiene-public-health.jpg",
+            "ogImage": "/images/banners/helmet-hygiene-public-health.jpg",
             "canonicalUrl": "https://freshpod.in/blog/how-helmet-hygiene-impacts-public-health",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1165,7 +1164,7 @@
     {
         "slug": "helmet-cleaning-vs-helmet-disinfection-whats-the-difference",
         "title": "Helmet Cleaning vs Helmet Disinfection – What’s the Difference?",
-        "banner": "/images/helmet-cleaning-vs-disinfection.jpg",
+        "banner": "/images/banners/helmet-cleaning-vs-disinfection.jpg",
         "headline": "Cleaning Removes Dirt – Disinfection Kills Germs: Why the Difference Matters for Your Health",
         "description": "Many riders clean their helmets but still face odor, itchiness, and infections. Understand why helmet cleaning (surface dirt removal) falls short compared to true disinfection (germ elimination), and how FreshPod bridges the gap with dry, deep sanitization.",
         "publishedAt": "2025-06-13",
@@ -1205,7 +1204,7 @@
             },
             "image-cleaning-methods": {
                 "type": "image",
-                "src": "/images/helmet-manual-cleaning.jpg",
+                "src": "/images/banners/helmet-manual-cleaning.jpg",
                 "alt": "Rider manually cleaning motorcycle helmet liner with soap and water, showing surface-level cleaning process",
                 "caption": "Typical helmet cleaning: wiping, washing liners, or spraying — effective for dirt but not for killing deep-seated germs"
             },
@@ -1221,7 +1220,7 @@
             },
             "image-disinfection-process": {
                 "type": "image",
-                "src": "/images/helmet-uv-ozone-disinfection.jpg",
+                "src": "/images/banners/helmet-uv-ozone-disinfection.jpg",
                 "alt": "FreshPod machine using UV-C light and ozone for deep helmet disinfection, showing germ-killing process inside chamber",
                 "caption": "True disinfection: UV-C + ozone penetrates every layer, killing 99.9% of bacteria, viruses, and fungi without adding moisture"
             },
@@ -1258,7 +1257,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/helmet-cleaning-vs-disinfection.jpg",
+            "ogImage": "/images/banners/helmet-cleaning-vs-disinfection.jpg",
             "canonicalUrl": "https://freshpod.in/blog/helmet-cleaning-vs-helmet-disinfection-whats-the-difference",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1287,7 +1286,7 @@
     {
         "slug": "the-right-way-to-maintain-your-riding-gear",
         "title": "The Right Way to Maintain Your Riding Gear",
-        "banner": "/images/riding-gear-maintenance.jpg",
+        "banner": "/images/banners/riding-gear-maintenance.jpg",
         "headline": "Keep Your Helmet, Jacket & Gloves Fresh, Safe & Long-Lasting",
         "description": "Proper maintenance of riding gear goes beyond looks — it protects your health, extends equipment life, and ensures safety. Follow this complete guide to helmet care, jacket/glove cleaning, and why disinfection with FreshPod is essential for true hygiene.",
         "publishedAt": "2025-06-16",
@@ -1327,7 +1326,7 @@
             },
             "image-helmet-care-steps": {
                 "type": "image",
-                "src": "/images/helmet-maintenance-steps.jpg",
+                "src": "/images/banners/helmet-maintenance-steps.jpg",
                 "alt": "Step-by-step visual guide showing proper helmet cleaning, liner washing, and disinfection process for motorcycle riders",
                 "caption": "Follow these steps: exterior wipe, liner wash, deep disinfection — keep your helmet safe and hygienic"
             },
@@ -1379,7 +1378,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/riding-gear-maintenance.jpg",
+            "ogImage": "/images/banners/riding-gear-maintenance.jpg",
             "canonicalUrl": "https://freshpod.in/blog/the-right-way-to-maintain-your-riding-gear",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1408,7 +1407,7 @@
     {
         "slug": "why-colleges-should-install-helmet-sanitizing-machines",
         "title": "Why Colleges Should Install Helmet Sanitizing Machines",
-        "banner": "/images/college-helmet-sanitizer-installation.jpg",
+        "banner": "/images/banners/college-helmet-sanitizer-installation.jpg",
         "headline": "Campus Hygiene Revolution: Protecting Student Health One Helmet at a Time",
         "description": "Colleges and universities in India host thousands of students who commute daily by two-wheeler. Shared parking, group rides, and hot weather create perfect conditions for helmet-related infections. Discover why installing helmet sanitizing machines like FreshPod is a smart, low-cost step for student wellness, reduced absenteeism, and modern campus branding.",
         "publishedAt": "2025-06-19",
@@ -1448,7 +1447,7 @@
             },
             "image-college-parking-helmets": {
                 "type": "image",
-                "src": "/images/college-bike-parking-helmets.jpg",
+                "src": "/images/banners/college-bike-parking-helmets.jpg",
                 "alt": "Busy college parking lot filled with two-wheelers and helmets, typical of Indian campuses where thousands of students commute daily",
                 "caption": "Typical Indian college parking: thousands of helmets exposed to heat and sharing risks every day — a hidden hygiene challenge"
             },
@@ -1500,7 +1499,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/college-helmet-sanitizer-installation.jpg",
+            "ogImage": "/images/banners/college-helmet-sanitizer-installation.jpg",
             "canonicalUrl": "https://freshpod.in/blog/why-colleges-should-install-helmet-sanitizing-machines",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1529,7 +1528,7 @@
     {
         "slug": "bike-showrooms-helmet-hygiene-a-growing-necessity",
         "title": "Bike Showrooms & Helmet Hygiene: A Growing Necessity",
-        "banner": "/images/bike-showroom-helmet-hygiene.jpg",
+        "banner": "/images/banners/bike-showroom-helmet-hygiene.jpg",
         "headline": "Elevate Customer Trust & Sales: Why Helmet Hygiene Is Becoming Essential in Bike Showrooms",
         "description": "Bike showrooms in India handle hundreds of test rides monthly. Dirty demo helmets create hygiene concerns, reduce customer confidence, and risk health complaints. Discover why installing helmet sanitizing machines like FreshPod is now a competitive advantage for showrooms — boosting satisfaction, repeat business, and brand reputation.",
         "publishedAt": "2025-06-21",
@@ -1569,7 +1568,7 @@
             },
             "image-showroom-test-ride": {
                 "type": "image",
-                "src": "/images/bike-showroom-test-ride-helmet.jpg",
+                "src": "/images/banners/bike-showroom-test-ride-helmet.jpg",
                 "alt": "Customer trying on demo helmet at a bike showroom during test ride, highlighting hygiene concerns with shared gear",
                 "caption": "Test rides are crucial for sales — but shared demo helmets raise immediate hygiene questions from customers"
             },
@@ -1621,7 +1620,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/bike-showroom-helmet-hygiene.jpg",
+            "ogImage": "/images/banners/bike-showroom-helmet-hygiene.jpg",
             "canonicalUrl": "https://freshpod.in/blog/bike-showrooms-helmet-hygiene-a-growing-necessity",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1650,7 +1649,7 @@
     {
         "slug": "public-helmet-usage-and-safety-concerns",
         "title": "Public Helmet Usage and Safety Concerns",
-        "banner": "/images/public-helmet-usage-safety.jpg",
+        "banner": "/images/banners/public-helmet-usage-safety.jpg",
         "headline": "The Hidden Dangers of Public & Shared Helmet Use in India",
         "description": "Public helmet usage — in rentals, ride-sharing, delivery fleets, tourist spots, and emergency situations — raises serious safety and hygiene concerns. Cross-contamination spreads infections, compromises helmet integrity, and increases accident risks. Learn the key issues and how FreshPod sanitization addresses them for safer public helmet sharing.",
         "publishedAt": "2025-06-24",
@@ -1690,7 +1689,7 @@
             },
             "image-public-helmet-scenarios": {
                 "type": "image",
-                "src": "/images/public-shared-helmets-india.jpg",
+                "src": "/images/banners/public-shared-helmets-india.jpg",
                 "alt": "Multiple scenarios of public helmet use in India: tourist rental, delivery fleet, showroom demo, showing shared usage risks",
                 "caption": "From tourist rentals to delivery fleets and showroom demos — public helmets serve many heads, amplifying hygiene and safety concerns"
             },
@@ -1742,7 +1741,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/public-helmet-usage-safety.jpg",
+            "ogImage": "/images/banners/public-helmet-usage-safety.jpg",
             "canonicalUrl": "https://freshpod.in/blog/public-helmet-usage-and-safety-concerns",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1771,7 +1770,7 @@
     {
         "slug": "the-role-of-hygiene-in-the-two-wheeler-industry",
         "title": "The Role of Hygiene in the Two-Wheeler Industry",
-        "banner": "/images/two-wheeler-hygiene-industry.jpg",
+        "banner": "/images/banners/two-wheeler-hygiene-industry.jpg",
         "headline": "Hygiene Is No Longer Optional – It's a Core Pillar of the Two-Wheeler Ecosystem",
         "description": "From manufacturers and dealers to delivery fleets, ride-sharing, and daily commuters, hygiene is reshaping the two-wheeler industry in India. Explore how helmet and gear hygiene influences safety, customer trust, regulatory trends, sales, and the future of mobility — and why FreshPod represents the next evolution in industry standards.",
         "publishedAt": "2025-06-27",
@@ -1811,7 +1810,7 @@
             },
             "image-two-wheeler-ecosystem": {
                 "type": "image",
-                "src": "/images/two-wheeler-industry-ecosystem.jpg",
+                "src": "/images/banners/two-wheeler-industry-ecosystem.jpg",
                 "alt": "Visual overview of India's two-wheeler ecosystem including manufacturers, showrooms, delivery fleets, commuters, and hygiene touchpoints",
                 "caption": "The two-wheeler ecosystem in India — hygiene now touches every part from manufacturing to daily rider experience"
             },
@@ -1863,7 +1862,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/two-wheeler-hygiene-industry.jpg",
+            "ogImage": "/images/banners/two-wheeler-hygiene-industry.jpg",
             "canonicalUrl": "https://freshpod.in/blog/the-role-of-hygiene-in-the-two-wheeler-industry",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -1892,7 +1891,7 @@
     {
         "slug": "trends-in-public-hygiene-technology",
         "title": "Trends in Public Hygiene Technology",
-        "banner": "/images/public-hygiene-tech-trends.jpg",
+        "banner": "/images/banners/public-hygiene-tech-trends.jpg",
         "headline": "The Rise of Smart, Contactless Hygiene Solutions in Public Spaces",
         "description": "From UV-C robots and ozone chambers to touchless dispensers and AI-monitored sanitization stations, public hygiene technology is evolving rapidly. Explore the key trends shaping 2026 and beyond — and how helmet-specific solutions like FreshPod fit into the bigger picture of safer shared environments.",
         "publishedAt": "2025-06-30",
@@ -1933,7 +1932,7 @@
             },
             "image-hygiene-tech-evolution": {
                 "type": "image",
-                "src": "/images/hygiene-technology-trends-2026.jpg",
+                "src": "/images/banners/hygiene-technology-trends-2026.jpg",
                 "alt": "Timeline and examples of evolving public hygiene technologies from hand sanitizers to UV robots, ozone chambers, and smart stations",
                 "caption": "Evolution of public hygiene tech: from basic sanitizers to autonomous, smart, and helmet-specific disinfection systems"
             },
@@ -1990,7 +1989,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/public-hygiene-tech-trends.jpg",
+            "ogImage": "/images/banners/public-hygiene-tech-trends.jpg",
             "canonicalUrl": "https://freshpod.in/blog/trends-in-public-hygiene-technology",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2019,7 +2018,7 @@
     {
         "slug": "smart-hygiene-solutions-for-urban-india",
         "title": "Smart Hygiene Solutions for Urban India",
-        "banner": "/images/smart-hygiene-urban-india.jpg",
+        "banner": "/images/banners/smart-hygiene-urban-india.jpg",
         "headline": "Building Cleaner Cities: Smart Hygiene Solutions Tailored for Urban India",
         "description": "Urban India faces unique hygiene challenges — dense crowds, high two-wheeler usage, gig economy fleets, hot-humid climate, and shared public spaces. Discover the smartest, most practical hygiene technologies solving these problems today, with a special focus on helmet sanitization for millions of daily commuters and delivery riders.",
         "publishedAt": "2025-07-02",
@@ -2059,7 +2058,7 @@
             },
             "image-urban-hygiene-chaos": {
                 "type": "image",
-                "src": "/images/urban-india-hygiene-challenges.jpg",
+                "src": "/images/banners/urban-india-hygiene-challenges.jpg",
                 "alt": "Busy Indian city street with heavy two-wheeler traffic, delivery riders, and crowded parking showing urban hygiene challenges",
                 "caption": "Urban India's reality: dense traffic, long rider hours, shared helmets, and heat — all driving the need for smart hygiene solutions"
             },
@@ -2111,7 +2110,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/smart-hygiene-urban-india.jpg",
+            "ogImage": "/images/banners/smart-hygiene-urban-india.jpg",
             "canonicalUrl": "https://freshpod.in/blog/smart-hygiene-solutions-for-urban-india",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2140,7 +2139,7 @@
     {
         "slug": "startups-in-sanitization-industry",
         "title": "Startups in Sanitization Industry",
-        "banner": "/images/sanitization-startups-india.jpg",
+        "banner": "/images/banners/sanitization-startups-india.jpg",
         "headline": "The Booming Wave of Sanitization Startups in India – Innovation Meets Necessity",
         "description": "India's sanitization startup ecosystem is exploding — from UV robots and ozone chambers to helmet-specific disinfectors and smart public stations. Explore the most promising players, emerging trends, funding landscape, and how FreshPod stands out in the helmet hygiene niche for urban mobility and gig economy needs.",
         "publishedAt": "2025-07-05",
@@ -2180,7 +2179,7 @@
             },
             "image-sanitization-startup-ecosystem": {
                 "type": "image",
-                "src": "/images/sanitization-startups-india-ecosystem.jpg",
+                "src": "/images/banners/sanitization-startups-india-ecosystem.jpg",
                 "alt": "Map and icons representing India's sanitization startup ecosystem — UV robots, ozone devices, helmet chambers, public stations across cities",
                 "caption": "India's sanitization startup landscape: from metros to tier-2 cities, innovation is targeting public, commercial, and personal hygiene at scale"
             },
@@ -2232,7 +2231,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/sanitization-startups-india.jpg",
+            "ogImage": "/images/banners/sanitization-startups-india.jpg",
             "canonicalUrl": "https://freshpod.in/blog/startups-in-sanitization-industry",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2261,7 +2260,7 @@
     {
         "slug": "future-of-automated-disinfection-machines",
         "title": "Future of Automated Disinfection Machines",
-        "banner": "/images/future-automated-disinfection.jpg",
+        "banner": "/images/banners/future-automated-disinfection.jpg",
         "headline": "The Next Decade of Automated Disinfection: Smarter, Smaller, Everywhere",
         "description": "Automated disinfection machines are evolving fast — from basic UV chambers to AI-powered, IoT-connected, multi-modal systems integrated into daily life. Explore upcoming breakthroughs, helmet-specific advancements, urban deployment scenarios, and how FreshPod is already paving the way for the future of effortless, scalable hygiene in India.",
         "publishedAt": "2025-07-08",
@@ -2301,7 +2300,7 @@
             },
             "image-disinfection-evolution-timeline": {
                 "type": "image",
-                "src": "/images/automated-disinfection-future-timeline.jpg",
+                "src": "/images/banners/automated-disinfection-future-timeline.jpg",
                 "alt": "Timeline graphic showing evolution of automated disinfection machines from 2020 manual UV cabinets to 2030 AI-integrated, multi-modal urban systems",
                 "caption": "From 2020 emergency UV boxes to 2030 vision: AI, IoT, autonomous, and helmet-focused disinfection everywhere"
             },
@@ -2353,7 +2352,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/future-automated-disinfection.jpg",
+            "ogImage": "/images/banners/future-automated-disinfection.jpg",
             "canonicalUrl": "https://freshpod.in/blog/future-of-automated-disinfection-machines",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2382,7 +2381,7 @@
     {
         "slug": "why-freshpod-is-better-than-traditional-cleaning-methods",
         "title": "Why FreshPod Is Better Than Traditional Cleaning Methods",
-        "banner": "/images/freshpod-vs-traditional-cleaning.jpg",
+        "banner": "/images/banners/freshpod-vs-traditional-cleaning.jpg",
         "headline": "Traditional Cleaning vs FreshPod: Why Only One Truly Protects Your Helmet & Health",
         "description": "Wiping, spraying, washing, or sun-drying helmets removes dirt — but leaves dangerous germs alive deep inside the padding. Discover why FreshPod's dry UV-C + ozone disinfection outperforms every traditional method for complete hygiene, odor elimination, helmet longevity, and rider safety.",
         "publishedAt": "2025-07-11",
@@ -2422,7 +2421,7 @@
             },
             "image-traditional-cleaning-fail": {
                 "type": "image",
-                "src": "/images/traditional-helmet-cleaning-limitations.jpg",
+                "src": "/images/banners/traditional-helmet-cleaning-limitations.jpg",
                 "alt": "Illustration showing traditional helmet cleaning (wiping, spraying, sun-drying) only reaching surface while deep padding remains contaminated with germs",
                 "caption": "Traditional methods clean the outside — but leave bacteria, fungi, and viruses thriving deep inside the foam and liner"
             },
@@ -2438,7 +2437,7 @@
             },
             "image-freshpod-process": {
                 "type": "image",
-                "src": "/images/freshpod-disinfection-process.jpg",
+                "src": "/images/banners/freshpod-disinfection-process.jpg",
                 "alt": "Cutaway diagram of FreshPod chamber showing UV-C light and ozone gas penetrating deep into helmet padding for complete disinfection",
                 "caption": "FreshPod's dry process: UV-C + ozone reach every hidden fold and pore — killing germs where traditional methods can't"
             },
@@ -2475,7 +2474,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/freshpod-vs-traditional-cleaning.jpg",
+            "ogImage": "/images/banners/freshpod-vs-traditional-cleaning.jpg",
             "canonicalUrl": "https://freshpod.in/blog/why-freshpod-is-better-than-traditional-cleaning-methods",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2504,7 +2503,7 @@
     {
         "slug": "freshpod-machine-features-explained",
         "title": "FreshPod Machine Features Explained",
-        "banner": "/images/freshpod-machine-features.jpg",
+        "banner": "/images/banners/freshpod-machine-features.jpg",
         "headline": "Inside FreshPod: Every Feature Designed for Real-World Helmet Hygiene",
         "description": "From dual UV-C + ozone disinfection to smart cycle timing, zero-moisture safety, and compact public deployment — discover the thoughtful engineering behind FreshPod that makes it the most effective, rider-friendly, and durable helmet sanitizer available today.",
         "publishedAt": "2025-07-15",
@@ -2544,7 +2543,7 @@
             },
             "image-uv-ozone-chamber": {
                 "type": "image",
-                "src": "/images/freshpod-uv-ozone-chamber.jpg",
+                "src": "/images/banners/freshpod-uv-ozone-chamber.jpg",
                 "alt": "Internal view of FreshPod disinfection chamber highlighting UV-C lamp array and ozone diffusion system around a motorcycle helmet",
                 "caption": "FreshPod's chamber: strategically positioned UV-C lamps + ozone gas ensure 360° coverage and deep penetration into helmet padding"
             },
@@ -2596,7 +2595,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/freshpod-machine-features.jpg",
+            "ogImage": "/images/banners/freshpod-machine-features.jpg",
             "canonicalUrl": "https://freshpod.in/blog/freshpod-machine-features-explained",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2625,7 +2624,7 @@
     {
         "slug": "how-long-does-freshpod-take-to-sanitize-a-helmet",
         "title": "How Long Does FreshPod Take to Sanitize a Helmet?",
-        "banner": "/images/freshpod-sanitization-time.jpg",
+        "banner": "/images/banners/freshpod-sanitization-time.jpg",
         "headline": "Just 3–5 Minutes: Fast, Effective Helmet Sanitization with FreshPod",
         "description": "FreshPod sanitizes a full-face or open-face helmet in only 3 to 5 minutes using a dry UV-C + ozone process. Learn exactly how the cycle timing works, what affects duration, why it's so quick compared to traditional methods, and why this speed makes daily disinfection realistic for riders and fleets.",
         "publishedAt": "2025-07-18",
@@ -2665,7 +2664,7 @@
             },
             "image-freshpod-cycle-display": {
                 "type": "image",
-                "src": "/images/freshpod-cycle-timer-display.jpg",
+                "src": "/images/banners/freshpod-cycle-timer-display.jpg",
                 "alt": "FreshPod LED display showing active sanitization cycle countdown from 5:00 minutes remaining",
                 "caption": "FreshPod's clear LED countdown — riders see exactly how long is left (typically 3–5 minutes)"
             },
@@ -2717,7 +2716,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/freshpod-sanitization-time.jpg",
+            "ogImage": "/images/banners/freshpod-sanitization-time.jpg",
             "canonicalUrl": "https://freshpod.in/blog/how-long-does-freshpod-take-to-sanitize-a-helmet",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2746,7 +2745,7 @@
     {
         "slug": "is-freshpod-safe-for-all-helmet-types",
         "title": "Is FreshPod Safe for All Helmet Types?",
-        "banner": "/images/freshpod-helmet-compatibility.jpg",
+        "banner": "/images/banners/freshpod-helmet-compatibility.jpg",
         "headline": "Yes — FreshPod Is Engineered to Be Safe for Every Helmet You Own or Use",
         "description": "From premium full-face carbon-fiber helmets to budget open-face models, modular touring lids, off-road motocross, and even kids' helmets — FreshPod's dry, non-chemical disinfection process is tested and proven safe across all common helmet types and materials used in India and globally.",
         "publishedAt": "2025-07-20",
@@ -2786,7 +2785,7 @@
             },
             "image-helmet-materials-variety": {
                 "type": "image",
-                "src": "/images/helmet-materials-compatibility.jpg",
+                "src": "/images/banners/helmet-materials-compatibility.jpg",
                 "alt": "Collection of different motorcycle helmet types and material close-ups (EPS foam, polycarbonate shell, carbon fiber, visor, straps) tested safe with FreshPod",
                 "caption": "Every major helmet material and component — from EPS foam to carbon shells and anti-fog visors — proven safe after repeated FreshPod cycles"
             },
@@ -2838,7 +2837,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/freshpod-helmet-compatibility.jpg",
+            "ogImage": "/images/banners/freshpod-helmet-compatibility.jpg",
             "canonicalUrl": "https://freshpod.in/blog/is-freshpod-safe-for-all-helmet-types",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2867,7 +2866,7 @@
     {
         "slug": "inside-freshpod-the-technology-breakdown",
         "title": "Inside FreshPod: The Technology Breakdown",
-        "banner": "/images/inside-freshpod-technology.jpg",
+        "banner": "/images/banners/inside-freshpod-technology.jpg",
         "headline": "From UV-C Photons to Ozone Molecules — How FreshPod Actually Kills Germs",
         "description": "A deep technical look at the science and engineering inside FreshPod: how UV-C light + controlled ozone work together, why the combination is superior, the physics of penetration, safety mechanisms, and real efficacy data that make it the most advanced helmet disinfection solution available.",
         "publishedAt": "2025-07-24",
@@ -2908,7 +2907,7 @@
             },
             "image-uv-c-dna-damage": {
                 "type": "image",
-                "src": "/images/uv-c-dna-dimer-illustration.jpg",
+                "src": "/images/banners/uv-c-dna-dimer-illustration.jpg",
                 "alt": "Scientific illustration showing UV-C light causing thymine dimers in microbial DNA, preventing replication",
                 "caption": "UV-C at 254 nm creates pyrimidine dimers in DNA — the primary mechanism that renders bacteria and viruses non-infectious"
             },
@@ -2919,7 +2918,7 @@
             },
             "image-ozone-diffusion-helmet": {
                 "type": "image",
-                "src": "/images/ozone-diffusion-helmet-padding.jpg",
+                "src": "/images/banners/ozone-diffusion-helmet-padding.jpg",
                 "alt": "Cross-section diagram showing ozone gas molecules penetrating deep into helmet foam layers where UV light cannot reach",
                 "caption": "Ozone gas flows into every hidden space — ensuring no microbial safe zones inside the helmet"
             },
@@ -2966,7 +2965,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/inside-freshpod-technology.jpg",
+            "ogImage": "/images/banners/inside-freshpod-technology.jpg",
             "canonicalUrl": "https://freshpod.in/blog/inside-freshpod-the-technology-breakdown",
             "schemaType": "BlogPosting",
             "aeo": {
@@ -2995,7 +2994,7 @@
     {
         "slug": "does-freshpod-damage-helmet-padding",
         "title": "Does FreshPod Damage Helmet Padding?",
-        "banner": "/images/freshpod-helmet-padding-safety.jpg",
+        "banner": "/images/banners/freshpod-helmet-padding-safety.jpg",
         "headline": "No — FreshPod Is Specifically Engineered to Preserve Helmet Padding & Foam Integrity",
         "description": "Helmet padding (EPS foam, cheek pads, liners) is delicate and easily degraded by water, heat, or chemicals. FreshPod uses a completely dry, room-temperature UV-C + ozone process proven safe through extensive testing — no damage to padding, no compromise to crash protection, and actually helps helmets last longer by preventing sweat-related breakdown.",
         "publishedAt": "2025-07-27",
@@ -3035,7 +3034,7 @@
             },
             "image-eps-foam-closeup": {
                 "type": "image",
-                "src": "/images/eps-foam-helmet-padding.jpg",
+                "src": "/images/banners/eps-foam-helmet-padding.jpg",
                 "alt": "Close-up microscopic view of clean EPS foam structure vs degraded foam from sweat and improper cleaning",
                 "caption": "EPS foam under magnification: left — clean & intact; right — degraded from chronic moisture & microbial activity (common without proper dry disinfection)"
             },
@@ -3087,7 +3086,7 @@
                 "bacteria",
                 "virus"
             ],
-            "ogImage": "/images/freshpod-helmet-padding-safety.jpg",
+            "ogImage": "/images/banners/freshpod-helmet-padding-safety.jpg",
             "canonicalUrl": "https://freshpod.in/blog/does-freshpod-damage-helmet-padding",
             "schemaType": "BlogPosting",
             "aeo": {

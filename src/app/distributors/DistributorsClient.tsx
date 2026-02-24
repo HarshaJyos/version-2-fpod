@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, MapPin, Package, CheckCircle2, Globe } from "lucide-react";
+import { Phone, MapPin, Package, CheckCircle2, Globe, MessageCircle } from "lucide-react";
 import distributorsData from "@/data/distributors.json";
 import internationalData from "@/data/international.json";
 import dynamic from "next/dynamic";
@@ -293,6 +293,24 @@ export default function DistributorsClient() {
                     </div>
                 </div>
             </section>
+
+            {/* ── FLOATING WHATSAPP BUTTON ───────────────────────── */}
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                className="fixed bottom-6 right-6 z-50"
+            >
+                <a
+                    href="https://wa.me/7815908571?text=Hi!%20I%20want%20to%20become%20a%20FreshPod%20distributor."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2.5 bg-[#25D366] text-white px-5 py-3.5 rounded-full shadow-2xl shadow-[#25D366]/40 hover:bg-[#20bd5a] hover:-translate-y-1 transition-all duration-300"
+                >
+                    <MessageCircle className="w-5 h-5 flex-shrink-0" />
+                    <span className="font-semibold font-outfit text-sm md:text-[15px]">Become a Distributor</span>
+                </a>
+            </motion.div>
 
         </div>
     );
