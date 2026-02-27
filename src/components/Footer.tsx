@@ -38,6 +38,8 @@ export default function Footer() {
                             <Link href="/gallery" className="text-muted-foreground hover:text-primary transition-colors text-sm">Gallery</Link>
                             <Link href="/calculator" className="text-muted-foreground hover:text-primary transition-colors text-sm">Calculator</Link>
                             <Link href="/#contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">Contact</Link>
+                            <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors text-sm">Terms & Conditions</Link>
+                            <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">Privacy Policy</Link>
                         </div>
                     </div>
 

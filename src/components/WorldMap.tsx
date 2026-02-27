@@ -12,6 +12,7 @@ const ACTIVE: Record<string, { label: string; flag: string; desc: string }> = {
     "356": { label: "India", flag: "🇮🇳", desc: "Headquartered · 12+ distributors · 6 states" },
     "524": { label: "Nepal", flag: "🇳🇵", desc: "Active · Kathmandu & key urban centres" },
     "144": { label: "Sri Lanka", flag: "🇱🇰", desc: "Active · Colombo · Western Province" },
+    "834": { label: "Tanzania", flag: "🇹🇿", desc: "Active · East Africa Region" },
 };
 
 // Marker pins for each country [lng, lat]
@@ -19,6 +20,7 @@ const MARKERS = [
     { id: "356", coordinates: [78.9629, 20.5937] as [number, number], label: "India", flag: "🇮🇳" },
     { id: "524", coordinates: [84.1240, 28.3949] as [number, number], label: "Nepal", flag: "🇳🇵" },
     { id: "144", coordinates: [80.7718, 7.8731] as [number, number], label: "Sri Lanka", flag: "🇱🇰" },
+    { id: "834", coordinates: [34.8888, -6.3690] as [number, number], label: "Tanzania", flag: "🇹🇿" },
 ];
 
 export default function WorldMap() {

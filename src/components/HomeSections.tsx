@@ -153,7 +153,7 @@ export default function HomeSections() {
                         transition={{ duration: 1, ease: "easeOut" }}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-outfit leading-tight max-w-5xl mx-auto drop-shadow-lg"
                     >
-                        Revolutionize hygiene and extend helmet life with our helmet disinfecting machine!
+                        As seen on Shark Tank
                     </motion.h1>
                     <motion.div
                         initial={{ opacity: 0, marginTop: 40 }}
