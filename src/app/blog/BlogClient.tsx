@@ -22,7 +22,7 @@ function BlogCard({ post }: { post: any }) {
             <Link href={`/blog/${post.slug}`} className="group block h-full">
                 <Card className="h-full border-border/50 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 rounded-2xl overflow-hidden">
                     <div className="relative h-44 w-full overflow-hidden bg-muted">
-                        <Image src={post.banner} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <Image src={post.banner} alt={post.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <CardContent className="p-5 flex flex-col gap-3">
                         <div className="flex items-center gap-2 text-muted-foreground text-xs flex-wrap">

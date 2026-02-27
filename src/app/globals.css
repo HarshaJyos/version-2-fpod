@@ -119,12 +119,20 @@
 }
 
 @layer base {
-  * {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
     @apply border-border outline-ring/50;
   }
 
   html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Prevent browsers (especially Safari/Edge Mobile) from auto-scaling fonts */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
@@ -132,5 +140,56 @@
     overflow-x: hidden;
     width: 100%;
     position: relative;
+    /* Consistent font rendering across Chrome, Edge, Firefox, Safari */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    /* Prevent text inflation on mobile */
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Ensure all images and media are responsive by default */
+  img,
+  video,
+    svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Fix for flex/grid children overflowing in Edge */
+  .container > * {
+    min-width: 0;
+  }
+}
+
+@layer utilities {
+  /* Cross-browser gradient text — works in Chrome, Edge, Firefox, Safari */
+  .text-gradient {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Cross-browser backdrop blur utility (adds -webkit- prefix) */
+  .backdrop-blur-cross {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  /* Prevent column break inside items (cross-browser masonry fix) */
+  .break-inside-safe {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Smooth GPU-accelerated transforms — fixes Edge jitter on parallax */
+  .will-change-transform {
+    will-change: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }

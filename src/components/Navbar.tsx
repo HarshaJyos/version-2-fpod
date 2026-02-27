@@ -42,6 +42,7 @@ export default function Navbar() {
                 ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-border/40 py-3"
                 : "bg-transparent py-4"
                 }`}
+            style={scrolled ? { WebkitBackdropFilter: "blur(12px)" } : {}}
         >
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex items-center justify-between">
@@ -52,6 +53,7 @@ export default function Navbar() {
                                 src="/images/GOGO.png"
                                 alt="Freshpod India Best Helmet Sanitizing Machine Logo"
                                 fill
+                                sizes="(max-width: 768px) 112px, 128px"
                                 className="object-contain"
                                 priority
                             />
@@ -110,7 +112,10 @@ export default function Navbar() {
 
             {/* Mobile Nav Dropdown */}
             {isOpen && (
-                <div className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-border/40 shadow-xl">
+                <div
+                    className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-border/40 shadow-xl"
+                    style={{ WebkitBackdropFilter: "blur(12px)" }}
+                >
                     <div className="container px-4 py-4 flex flex-col gap-1">
                         {navLinks.map((link) => (
                             <Link

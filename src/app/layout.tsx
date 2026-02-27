@@ -179,7 +179,7 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         <meta name="google-site-verification" content="2vqzVdIpcczz7aYuKYSdy-arlr-HYsLLrNbiGYgOWH0" />
       </head>

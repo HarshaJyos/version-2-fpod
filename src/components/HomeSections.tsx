@@ -138,30 +138,30 @@ export default function HomeSections() {
             <section
                 id="home"
                 ref={heroRef}
-                className="relative h-[90vh] flex items-center justify-center overflow-hidden"
+                className="relative h-[90vh] min-h-[90svh] flex flex-col justify-end pb-16 overflow-hidden"
             >
+                {/* GPU-accelerated parallax: will-change + translateZ prevents Edge jitter */}
                 <motion.div
-                    style={{ y: yBg, backgroundImage: "url('/images/biker bg.webp')" } as any}
+                    style={{
+                        y: yBg,
+                        backgroundImage: "url('/images/hero.webp')",
+                        willChange: "transform",
+                        WebkitTransform: "translateZ(0)",
+                        backfaceVisibility: "hidden",
+                        WebkitBackfaceVisibility: "hidden",
+                    } as any}
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 />
-                <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-black/40 to-background/20" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
 
                 <div className="container relative z-20 px-4 text-center">
-                    <motion.h1
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-outfit leading-tight max-w-5xl mx-auto drop-shadow-lg"
-                    >
-                        As seen on Shark Tank
-                    </motion.h1>
                     <motion.div
-                        initial={{ opacity: 0, marginTop: 40 }}
-                        animate={{ opacity: 1, marginTop: 0 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-                        className="mt-10"
                     >
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        {/* flex-wrap ensures buttons stack on very small screens without overflow */}
+                        <div className="flex flex-wrap gap-4 justify-center">
                             <Link href="#contact">
                                 <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 rounded-full shadow-xl shadow-primary/20 transition-transform hover:scale-105">
                                     Get In Touch
@@ -206,10 +206,10 @@ export default function HomeSections() {
                         </p>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-12 place-items-center max-w-6xl mx-auto">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="space-y-6 text-lg text-muted-foreground leading-relaxed md:pt-4"
+                            className="space-y-6 text-lg text-muted-foreground leading-relaxed md:pt-4 w-full max-w-xl mx-auto"
                         >
                             <h3 className="text-2xl font-bold font-outfit text-foreground">Welcome to <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-primary to-green-400">Freshpod!</span></h3>
                             <p>
@@ -224,17 +224,19 @@ export default function HomeSections() {
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="w-full mx-auto max-w-xs md:max-w-none"
+                            className="w-full flex justify-center items-center"
                         >
-                            <InfiniteCarousel
-                                images={[
-                                    { src: "/images/FM_1.png", alt: "FreshPod Machine – View 1" },
-                                    { src: "/images/FM_2.png", alt: "FreshPod Machine – View 2" },
-                                    { src: "/images/FM_3.png", alt: "FreshPod Machine – View 3" },
-                                    { src: "/images/FM_4.png", alt: "FreshPod Machine – View 4" },
-                                ]}
-                                interval={3200}
-                            />
+                            <div className="w-full max-w-xs md:max-w-sm">
+                                <InfiniteCarousel
+                                    images={[
+                                        { src: "/images/FM_1.png", alt: "FreshPod Machine – View 1" },
+                                        { src: "/images/FM_2.png", alt: "FreshPod Machine – View 2" },
+                                        { src: "/images/FM_3.png", alt: "FreshPod Machine – View 3" },
+                                        { src: "/images/FM_4.png", alt: "FreshPod Machine – View 4" },
+                                    ]}
+                                    interval={3200}
+                                />
+                            </div>
                         </motion.div>
                     </div>
                 </div>
@@ -242,10 +244,13 @@ export default function HomeSections() {
 
             {/* VIKSIT BHARAT */}
             <section id="viksit-bharat" className="py-16 md:py-24 relative overflow-hidden bg-white flex items-center justify-center min-h-[40vh] w-full">
-                {/* Flag SVG Background */}
+                {/* Flag SVG Background — explicit inline backgroundSize for cross-browser consistency */}
                 <div
-                    className="absolute inset-0 z-0 opacity-65 w-full bg-center bg-no-repeat bg-[length:auto_100%] md:bg-[length:100%_100%] lg:bg-[length:100%_auto]"
-                    style={{ backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg')" }}
+                    className="absolute inset-0 z-0 opacity-65 w-full bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg')",
+                        backgroundSize: "100% 100%",
+                    }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/50 to-white/95 z-0" />
 
@@ -371,10 +376,10 @@ export default function HomeSections() {
                         </p>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-12 place-items-center max-w-6xl mx-auto">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="space-y-6"
+                            className="space-y-6 w-full max-w-md mx-auto"
                         >
                             {[
                                 { icon: QrCode, text: "Scan the QR" },
@@ -396,15 +401,22 @@ export default function HomeSections() {
 
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
-                            className="rounded-2xl overflow-hidden shadow-2xl bg-black aspect-[9/16] max-h-[70vh] w-full mx-auto border-4 border-white/10"
+                            className="w-full flex justify-center items-center"
                         >
-                            <video
-                                src="/videos/VID-20241202-WA0003 1.mp4"
-                                controls
-                                muted
-                                className="w-full h-full object-cover"
-                                poster="/images/FM_1.png"
-                            />
+                            {/* aspect-ratio fallback: padding-top trick ensures correct 9:16 ratio in all browsers */}
+                            <div
+                                className="rounded-3xl overflow-hidden shadow-2xl bg-black w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] border-[6px] border-white/10 relative flex-shrink-0"
+                                style={{ aspectRatio: "9 / 16" }}
+                            >
+                                <video
+                                    src="/videos/VID-20241202-WA0003 1.mp4"
+                                    controls
+                                    muted
+                                    playsInline
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                    poster="/images/FM_1.png"
+                                />
+                            </div>
                         </motion.div>
                     </div>
                 </div>
@@ -418,7 +430,7 @@ export default function HomeSections() {
                         className="text-center mb-16"
                     >
                         <h2 className="text-3xl md:text-5xl font-bold font-outfit text-foreground inline-block relative after:content-[''] after:block after:w-24 after:h-1.5 after:bg-primary after:mx-auto after:mt-4 after:rounded-full">
-                            What Our Riders Say
+                            Voice of Freshod Users
                         </h2>
                         <p className="mt-6 text-muted-foreground text-lg max-w-2xl mx-auto">
                             Don't just take our word for it — hear from the people who ride with Freshpod every day.

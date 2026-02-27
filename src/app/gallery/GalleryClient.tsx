@@ -7,12 +7,22 @@ import { X, ZoomIn, ExternalLink, SlidersHorizontal, Check, Search } from "lucid
 import { Button } from "@/components/ui/button";
 
 const allImages = [
-    { src: "/images/FM_1.png", alt: "FreshPod Machine – Front View", category: "Product" },
-    { src: "/images/FM_2.png", alt: "FreshPod Machine – Side View", category: "Product" },
-    { src: "/images/FM_3.png", alt: "FreshPod Machine – Angle View", category: "Product" },
-    { src: "/images/FM_4.png", alt: "FreshPod Machine – Detail", category: "Product" },
-    { src: "/images/odor.jpg", alt: "Odor Free Experience", category: "Features" },
-    { src: "/images/odor free.png", alt: "Odor Free Experience", category: "Features" },
+    { src: "/images/FM_1.png", alt: "FreshPod Machine – Sunflare Yellow Color", category: "Product" },
+    { src: "/images/FM_2.png", alt: "FreshPod Machine – Carbon Black Color", category: "Product" },
+    { src: "/images/FM_3.png", alt: "FreshPod Machine – Glacier Blue Color", category: "Product" },
+    { src: "/images/FM_4.png", alt: "FreshPod Machine – Crimson Red Color", category: "Product" },
+    { src: "/images/gallery/1.jpg", alt: "Freshpod Machines", category: "Product" },
+    { src: "/images/gallery/2.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/3.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/4.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/5.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/6.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/7.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/8.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/9.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/10.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/11.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
+    { src: "/images/gallery/12.jpg", alt: "Freshpod Event", category: "Freshpod Event" },
 ];
 
 const ALL_CATS = ["All", ...Array.from(new Set(allImages.map((img) => img.category)))];
@@ -189,14 +199,17 @@ export default function GalleryClient() {
 
                         <AnimatePresence mode="wait">
                             {filtered.length > 0 ? (
+                                /* True masonry layout: CSS columns so images stack at their natural ratio.
+                                   gap-3 keeps cards close together. break-inside: avoid prevents card splitting. */
                                 <motion.div key={`${activeCategory}-${search}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
-                                    className="columns-1 sm:columns-2 xl:columns-3 gap-5">
+                                    className="[column-count:1] sm:[column-count:2] xl:[column-count:3] gap-3 [column-gap:12px]">
                                     {filtered.map((img, i) => (
                                         <motion.div key={i} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.35, delay: i * 0.04 }}
-                                            className="relative rounded-2xl overflow-hidden group mb-5 break-inside-avoid shadow-md hover:shadow-primary/20 hover:shadow-xl transition-all duration-300 bg-white border border-border/40 cursor-pointer"
+                                            className="relative rounded-2xl overflow-hidden group shadow-md hover:shadow-primary/20 hover:shadow-xl transition-all duration-300 bg-white border border-border/40 cursor-pointer w-full mb-3"
+                                            style={{ breakInside: "avoid", WebkitColumnBreakInside: "avoid", pageBreakInside: "avoid", display: "inline-block" } as any}
                                             onClick={() => setLightbox({ src: img.src, alt: img.alt })}>
                                             <Image src={img.src} alt={img.alt} width={800} height={600}
-                                                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" />
+                                                className="w-full h-auto block group-hover:scale-105 transition-transform duration-500" />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                                                 <div className="flex justify-between items-end">
                                                     <div>

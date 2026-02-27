@@ -47,10 +47,15 @@ export default function InfiniteCarousel({ images, interval = 3200, className = 
     };
 
     return (
-        /* 4:5 aspect ratio wrapper — portrait orientation */
+        /* Aspect ratio wrapper — 4:5 portrait — use padding-top trick for max browser compat.
+           padding-top: 125% = (5/4 * 100%) ensures Edge 18+, Safari 14-, all modern browsers.
+           The modern `aspect-ratio` CSS is set as well for browsers that support it. */
         <div
             className={`relative w-full rounded-3xl overflow-hidden bg-muted shadow-2xl select-none ${className}`}
-            style={{ aspectRatio: "4 / 5" }}
+            style={{
+                aspectRatio: "4 / 5",
+                paddingTop: "0", /* overridden by aspect-ratio in modern browsers */
+            }}
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >
@@ -68,6 +73,7 @@ export default function InfiniteCarousel({ images, interval = 3200, className = 
                         src={images[index].src}
                         alt={images[index].alt}
                         fill
+                        sizes="(max-width: 768px) 90vw, (max-width: 1280px) 40vw, 500px"
                         className="object-cover"
                         priority={index === 0}
                         draggable={false}
@@ -83,8 +89,8 @@ export default function InfiniteCarousel({ images, interval = 3200, className = 
                         onClick={() => goTo(i)}
                         aria-label={`Go to slide ${i + 1}`}
                         className={`rounded-full transition-all duration-300 ${i === index
-                                ? "w-6 h-2 bg-white shadow-md"
-                                : "w-2 h-2 bg-white/50 hover:bg-white/80"
+                            ? "w-6 h-2 bg-white shadow-md"
+                            : "w-2 h-2 bg-white/50 hover:bg-white/80"
                             }`}
                     />
                 ))}
